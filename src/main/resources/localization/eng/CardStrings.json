@@ -1,0 +1,535 @@
+{
+  "NobleWarrior:StrikeNW":
+  {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "NobleWarrior:DefendNW":
+  {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "NobleWarrior:Accumulate":
+  {
+    "NAME": "Accumulate",
+    "DESCRIPTION": "Exhaust 1 card. NL Gain !M! Strength."
+  },
+  "NobleWarrior:AggressiveGuard":
+  {
+    "NAME": "Aggressive Guard",
+    "DESCRIPTION": "Whenever you gain Block this turn, deal !M! damage to a random enemy."
+  },
+  "NobleWarrior:Ambidexterity":
+  {
+    "NAME": "Ambidexterity",
+    "DESCRIPTION": "Add 1 Throwing Knife and 1 Throwing Shuriken into your hand.",
+    "UPGRADE_DESCRIPTION": "Add 1 upgraded Throwing Knife and 1 upgraded Throwing Shuriken into your hand."
+  },
+  "NobleWarrior:ArmUp":
+  {
+    "NAME": "Arm Up",
+    "DESCRIPTION": "At the start of your turn, gain 1 Strength and Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, gain 1 Strength and Dexterity."
+  },
+  "NobleWarrior:ArmorBreak":
+  {
+    "NAME": "Armor Break",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable."
+  },
+  "NobleWarrior:BalancedStrike":
+  {
+    "NAME": "Balanced Strike",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "NobleWarrior:BodyLanguage":
+  {
+    "NAME": "Body Language",
+    "DESCRIPTION": "At the start of your turn, draw 1 card then Exhaust 1 card."
+  },
+  "NobleWarrior:BombToss":
+  {
+    "NAME": "Bomb Toss",
+    "DESCRIPTION": "Deal !D! damage. Add !M! Throwing Bombs into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Add !M! upgraded Throwing Bombs into your hand."
+  },
+  "NobleWarrior:BraveUp":
+  {
+    "NAME": "Brave Up",
+    "DESCRIPTION": "Exhaust any number of cards. Gain !M! Strength for each card exhausted.",
+    "UPGRADE_DESCRIPTION": "Exhaust any number of cards. Gain !M! Strength and !B! Block for each card exhausted."
+  },
+  "NobleWarrior:Brawler":
+  {
+    "NAME": "Brawler",
+    "DESCRIPTION": "Gain !B! Block. Draw 1 card if there are no Skills in your hand."
+  },
+  "NobleWarrior:CalculatedStrike":
+  {
+    "NAME": "Calculated Strike",
+    "DESCRIPTION": "Deal !D! damage. Retain !M! card this turn."
+  },
+  "NobleWarrior:CallUponTheEarth":
+  {
+    "NAME": "Call Upon the Earth",
+    "DESCRIPTION": "Deal !D! damage. Gain [E] if you played !M! or more cards already this turn."
+  },
+  "NobleWarrior:CastleOfStone":
+  {
+    "NAME": "Castle of Stone",
+    "DESCRIPTION": "If 3 or more enemies intend to attack, gain !M! Intangible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "If 3 or more enemies intend to attack, gain !M! Intangible. NL Exhaust. NL Retain."
+  },
+  "NobleWarrior:Catch":
+  {
+    "NAME": "Catch",
+    "DESCRIPTION": "Nullify the next enemy attack and return the same amount of damage to the enemy. NL Exhaust."
+  },
+  "NobleWarrior:Chakra":
+  {
+    "NAME": "Chakra",
+    "DESCRIPTION": "Gain !M! life. Gain [E]. NL Exhaust."
+  },
+  "NobleWarrior:ChargeUp":
+  {
+    "NAME": "Charge Up",
+    "DESCRIPTION": "Gain !M! Strength. You can't play this on the same turn you play an Attack."
+  },
+  "NobleWarrior:CombatTraining":
+  {
+    "NAME": "Combat Training",
+    "DESCRIPTION": "Whenever you play 3 Attacks in a row, gain !M! Strength."
+  },
+  "NobleWarrior:Counter":
+  {
+    "NAME": "Counter",
+    "DESCRIPTION": "Gain !M! Thorns for each enemy that intends to attack."
+  },
+  "NobleWarrior:CounterGeo":
+  {
+    "NAME": "Counter Geo",
+    "DESCRIPTION": "Whenever an enemy attacks you, apply 1 random debuff to it."
+  },
+  "NobleWarrior:DemonsFire":
+  {
+    "NAME": "Demon's Fire",
+    "DESCRIPTION": "Apply !M! Sleep to non-boss enemy."
+  },
+  "NobleWarrior:DesperateDefense":
+  {
+    "NAME": "Desperate Defense",
+    "DESCRIPTION": "The first time you play an Attack each turn, play a random Skill from your draw pile."
+  },
+  "NobleWarrior:Disillusion":
+  {
+    "NAME": "Disillusion",
+    "DESCRIPTION": "Gain !B! Block. Draw !M! cards. Those cards are Retained this turn."
+  },
+  "NobleWarrior:DrawOutAme-no-Murakumo":
+  {
+    "NAME": "Draw Out Ame-no-Murakumo",
+    "DESCRIPTION": "Gain !B! Block. Whenever you play a card this turn, the enemy loses !M! HP. NL Shuffle an Ame-no-Murakumo into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Whenever you play a card this turn, the enemy loses !M! HP. NL Shuffle an upgraded Ame-no-Murakumo into your draw pile. NL Exhaust."
+  },
+  "NobleWarrior:DrawOutAsuraKnife":
+  {
+    "NAME": "Draw Out Asura Knife",
+    "DESCRIPTION": "Deal !D! damage. Draw 1 card. NL Shuffle an Asura Knife into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Draw 1 card. NL Shuffle an upgraded Asura Knife into your draw pile. NL Exhaust."
+  },
+  "NobleWarrior:DrawOutChirijiraden":
+  {
+    "NAME": "Draw Out Chirijiraden",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Shuffle a Burn and a Chirijiraden into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Shuffle a Burn and an upgraded Chirijiraden into your draw pile. NL Exhaust."
+  },
+  "NobleWarrior:DrawOutKiyomori":
+  {
+    "NAME": "Draw Out Kiyomori",
+    "DESCRIPTION": "Gain !B! Block. Gain [E] at the start of your next turn. NL Shuffle a Kiyomori into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain [E] at the start of your next turn. NL Shuffle an upgraded Kiyomori into your draw pile. NL Exhaust."
+  },
+  "NobleWarrior:DrawOutKoutetsu":
+  {
+    "NAME": "Draw Out Koutetsu",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle a Wound and a Koutetsu into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Shuffle a Wound and an upgraded Koutetsu into your draw pile. NL Exhaust."
+  },
+  "NobleWarrior:DrawOutMasamune":
+  {
+    "NAME": "Draw Out Masamune",
+    "DESCRIPTION": "Gain !B! Block. Apply !M! Weak to ALL enemies. NL Shuffle a Masamune into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Apply !M! Weak to ALL enemies. NL Shuffle an upgraded Masamune into your draw pile. NL Exhaust."
+  },
+  "NobleWarrior:DrawOutMuramasa":
+  {
+    "NAME": "Draw Out Muramasa",
+    "DESCRIPTION": "Deal !D! damage. The enemy loses !M! Strength this turn. NL Shuffle a Muramasa into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. The enemy loses !M! Strength this turn. NL Shuffle an upgraded Muramasa into your draw pile. NL Exhaust."
+  },
+  "NobleWarrior:DrawOutMurasame":
+  {
+    "NAME": "Draw Out Murasame",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle a Murasame into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Shuffle an upgraded Murasame into your draw pile. NL Exhaust."
+  },
+  "NobleWarrior:EarthSlash":
+  {
+    "NAME": "Earth Slash",
+    "DESCRIPTION": "Gain !B! Block. Deal !D! damage to ALL enemies."
+  },
+  "NobleWarrior:EquipArmor":
+  {
+    "NAME": "Equip Armor",
+    "DESCRIPTION": "Gain !B! Block. Then, if you have 20 or more Block, lose !M! Block and gain !M! Metallicize."
+  },
+  "NobleWarrior:EvasiveJump":
+  {
+    "NAME": "Evasive Jump",
+    "DESCRIPTION": "Enemies deal no attack damage to you this turn. You cannot play Attacks the rest of this turn. NL Exhaust."
+  },
+  "NobleWarrior:FanDance":
+  {
+    "NAME": "Fan Dance",
+    "DESCRIPTION": "Deal !D! damage twice. Draw a card each time this card deals unblocked damage."
+  },
+  "NobleWarrior:Fly":
+  {
+    "NAME": "Fly",
+    "DESCRIPTION": "Reduce the attack damage you receive this turn by 50%. NL Exhaust."
+  },
+  "NobleWarrior:ForbiddenWaltz":
+  {
+    "NAME": "Forbidden Waltz",
+    "DESCRIPTION": "Apply !M! Immobilize, Toad, Confuse, Blind, and Slow to ALL enemies."
+  },
+  "NobleWarrior:Fury":
+  {
+    "NAME": "Fury",
+    "DESCRIPTION": "Gain !B! Block whenever you play an Attack."
+  },
+  "NobleWarrior:GainHeight":
+  {
+    "NAME": "Gain Height",
+    "DESCRIPTION": "Gain !M! Strength X times. NL Exhaust."
+  },
+  "NobleWarrior:GearUp":
+  {
+    "NAME": "Gear Up",
+    "DESCRIPTION": "Put a random card of cost 0, cost 1, and cost 2 from your draw pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Put a random card of cost 0, cost 1, and cost 2 from your draw pile into your hand. NL Retain."
+  },
+  "NobleWarrior:GilSnapper":
+  {
+    "NAME": "Gil Snapper",
+    "DESCRIPTION": "Whenever you receive unblocked damage, gain that amount of Gold."
+  },
+  "NobleWarrior:Hamedo":
+  {
+    "NAME": "Hamedo",
+    "DESCRIPTION": "Deal !D! damage to each enemy planning to attack. Gain !M! Buffer."
+  },
+  "NobleWarrior:HighJump":
+  {
+    "NAME": "High Jump",
+    "DESCRIPTION": "Deal !D! damage next turn."
+  },
+  "NobleWarrior:IntoShadows":
+  {
+    "NAME": "Into Shadows",
+    "DESCRIPTION": "Gain !B! Block. Apply !M! Vulnerable."
+  },
+  "NobleWarrior:JavelinThrow":
+  {
+    "NAME": "Javelin Throw",
+    "DESCRIPTION": "Deal !D! damage. Add 1 Throwing Spear into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Add 1 upgraded Throwing Spear into your hand."
+  },
+  "NobleWarrior:Jump":
+  {
+    "NAME": "Jump",
+    "DESCRIPTION": "Deal !D! damage next turn."
+  },
+  "NobleWarrior:Kamaitachi":
+  {
+    "NAME": "Kamaitachi",
+    "DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength this turn."
+  },
+  "NobleWarrior:LawOfTheLand":
+  {
+    "NAME": "Law of the Land",
+    "DESCRIPTION": "Deal !M! cards, then Exhaust a card from your hand."
+  },
+  "NobleWarrior:LayOfTheLand":
+  {
+    "NAME": "Lay of the Land",
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies."
+  },
+  "NobleWarrior:LocalQuake":
+  {
+    "NAME": "Local Quake",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Confuse."
+  },
+  "NobleWarrior:MindBreak":
+  {
+    "NAME": "Mind Break",
+    "DESCRIPTION": "Gain !B! Block. If an enemy intends to inflict a debuff, gain 1 Artifact."
+  },
+  "NobleWarrior:MountingFury":
+  {
+    "NAME": "Mounting Fury",
+    "DESCRIPTION": "At the start of your turn, deal !D! damage to ALL enemies, then increase this damage by !M!."
+  },
+  "NobleWarrior:Muzan":
+  {
+    "NAME": "Muzan",
+    "DESCRIPTION": "Deal !D! damage for each 0-cost card in your hand."
+  },
+  "NobleWarrior:ObserveBattle":
+  {
+    "NAME": "Observe Battle",
+    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Gain !M! Strength until end of turn."
+  },
+  "NobleWarrior:PiercingShot":
+  {
+    "NAME": "Piercing Shot",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable to ALL enemies."
+  },
+  "NobleWarrior:Pitfall":
+  {
+    "NAME": "Pitfall",
+    "DESCRIPTION": "Gain !B! Block. Remove all Block from enemy and apply !M! Immobilize."
+  },
+  "NobleWarrior:PolearmGuard":
+  {
+    "NAME": "Polearm Guard",
+    "DESCRIPTION": "Gain !B! Block. If you played another card this turn, draw !M! cards."
+  },
+  "NobleWarrior:Polka":
+  {
+    "NAME": "Polka",
+    "DESCRIPTION": "Whenever you draw a card, deal !D! damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a card, deal !D! damage to ALL enemies. NL Innate."
+  },
+  "NobleWarrior:PowerBreak":
+  {
+    "NAME": "Power Break",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak."
+  },
+  "NobleWarrior:RainOfArrows":
+  {
+    "NAME": "Rain of Arrows",
+    "DESCRIPTION": "Deal !D! damage, then deal !D! damage for each Attack played this turn."
+  },
+  "NobleWarrior:Reflexes":
+  {
+    "NAME": "Reflexes",
+    "DESCRIPTION": "Gain !B! Block. Add 1 random Throwing weapon into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Add 1 random upgraded Throwing weapon into your hand."
+  },
+  "NobleWarrior:RepeatingFist":
+  {
+    "NAME": "Repeating Fist",
+    "DESCRIPTION": "Deal !D! damage !M! times, then increase the number of hits by 1 this combat."
+  },
+  "NobleWarrior:ReverseFlourish":
+  {
+    "NAME": "Reverse Flourish",
+    "DESCRIPTION": "Deal !D! damage. Whenever you play an Attack while this is in hand, increase the damage of this card by !M! this combat."
+  },
+  "NobleWarrior:Rush":
+  {
+    "NAME": "Rush",
+    "DESCRIPTION": "Deal !D! damage twice."
+  },
+  "NobleWarrior:Salve":
+  {
+    "NAME": "Salve",
+    "DESCRIPTION": "Remove all debuffs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove all debuffs. NL Retain. NL Exhaust."
+  },
+  "NobleWarrior:Sandstorm":
+  {
+    "NAME": "Sandstorm",
+    "DESCRIPTION": "Deal !D! damage twice. Apply !M! Blind."
+  },
+  "NobleWarrior:ScatterTheAshes":
+  {
+    "NAME": "Scatter the Ashes",
+    "DESCRIPTION": "Whenever a card exhausts, deal !D! damage to ALL enemies."
+  },
+  "NobleWarrior:SeekCover":
+  {
+    "NAME": "Seek Cover",
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Dexterity, then if you have 3 or more Dexterity, Exhaust."
+  },
+  "NobleWarrior:ShieldBreak":
+  {
+    "NAME": "Shield Break",
+    "DESCRIPTION": "Remove all Block from the enemy and deal !D! damage. It can't gain Block for !M! turns."
+  },
+  "NobleWarrior:Sift":
+  {
+    "NAME": "Sift",
+    "DESCRIPTION": "At the start of your turn, you may discard a card. If you do, upgrade a card in your hand for the rest of combat."
+  },
+  "NobleWarrior:SleightOfHand":
+  {
+    "NAME": "Sleight of Hand",
+    "DESCRIPTION": "Exhaust a card. Choose 1 of 3 random cards and add it to your hand.",
+    "UPGRADE_DESCRIPTION": "Exhaust a card. Choose 1 of 3 random cards and add it to your hand. NL Retain."
+  },
+  "NobleWarrior:SlowDance":
+  {
+    "NAME": "Slow Dance",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Slow to ALL enemies."
+  },
+  "NobleWarrior:SpeedBreak":
+  {
+    "NAME": "Speed Break",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Dexterity this turn."
+  },
+  "NobleWarrior:SpinFist":
+  {
+    "NAME": "Spin Fist",
+    "DESCRIPTION": "Deal !D! damage. Return 1 card at random from your discard pile to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Return 1 card of your choice from your discard pile to your hand."
+  },
+  "NobleWarrior:StealArmor":
+  {
+    "NAME": "Steal Armor",
+    "DESCRIPTION": "Deal !D! damage. If you can Steal, apply !M! Vulnerable and gain !M! Dexterity. NL Apply 1 Stolen."
+  },
+  "NobleWarrior:StealEnergy":
+  {
+    "NAME": "Steal Energy",
+    "DESCRIPTION": "Gain !B! Block. If you can Steal, gain [E]. NL Apply 1 Stolen.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. If you can Steal, gain [E][E]. NL Apply 1 Stolen."
+  },
+  "NobleWarrior:StealExp":
+  {
+    "NAME": "Steal Exp",
+    "DESCRIPTION": "Deal !D! damage. If you can Steal, choose 1 of 3 cards to add to your deck permanently. NL Apply 1 Stolen. NL Exhaust."
+  },
+  "NobleWarrior:StealGil":
+  {
+    "NAME": "Steal Gil",
+    "DESCRIPTION": "Deal !D! damage. If you can Steal, gain Gold equal to unblocked damage dealt. NL Apply 1 Stolen."
+  },
+  "NobleWarrior:StealHeart":
+  {
+    "NAME": "Steal Heart",
+    "DESCRIPTION": "If you can Steal, apply !M! Charmed. NL Apply 1 Stolen. NL Exhaust."
+  },
+  "NobleWarrior:StealWeapon":
+  {
+    "NAME": "Steal Weapon",
+    "DESCRIPTION": "Deal !D! damage. If you can Steal, enemy loses !M! Strength and you gain !M! Strength. NL Apply 1 Stolen."
+  },
+  "NobleWarrior:SunkenState":
+  {
+    "NAME": "Sunken State",
+    "DESCRIPTION": "Whenever you play a 0-cost card, draw 1 card and gain !M! Block."
+  },
+  "NobleWarrior:SuperJump":
+  {
+    "NAME": "Super Jump",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies next turn."
+  },
+  "NobleWarrior:SwiftShot":
+  {
+    "NAME": "Swift Shot",
+    "DESCRIPTION": "Deal !D! damage. If the enemy intends to attack, gain [E]."
+  },
+  "NobleWarrior:SwiftStep":
+  {
+    "NAME": "Swift Step",
+    "DESCRIPTION": "Gain !B! Block. Apply !M! Weak."
+  },
+  "NobleWarrior:TacticalRetreat":
+  {
+    "NAME": "Tactical Retreat",
+    "DESCRIPTION": "Gain !B! Block. Draw 1 card for each enemy in combat."
+  },
+  "NobleWarrior:ThoroughSearch":
+  {
+    "NAME": "Thorough Search",
+    "DESCRIPTION": "Draw !M! cards. Gain 1 Weak."
+  },
+  "NobleWarrior:ThrowStone":
+  {
+    "NAME": "Throw Stone",
+    "DESCRIPTION": "Deal !D! damage to the enemy with the lowest health."
+  },
+  "NobleWarrior:UnlimitedArsenal":
+  {
+    "NAME": "Unlimited Arsenal",
+    "DESCRIPTION": "At the start of your turn, add 1 random Throwing weapon into your hand.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add 1 random upgraded Throwing weapon into your hand."
+  },
+  "NobleWarrior:Utsusemi":
+  {
+    "NAME": "Utsusemi",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust."
+  },
+  "NobleWarrior:VenomShot":
+  {
+    "NAME": "Venom Shot",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Poison."
+  },
+  "NobleWarrior:WalkOnWater":
+  {
+    "NAME": "Walk on Water",
+    "DESCRIPTION": "Whenever you create a card, gain 1 Strength or Dexterity at random."
+  },
+  "NobleWarrior:WaterBall":
+  {
+    "NAME": "Water Ball",
+    "DESCRIPTION": "Gain !B! Block. Apply !M! Toad."
+  },
+  "NobleWarrior:WaterMovement":
+  {
+    "NAME": "Water Movement",
+    "DESCRIPTION": "Whenever you create a card, gain [E] and draw 1 card."
+  },
+  "NobleWarrior:WaveFist":
+  {
+    "NAME": "Wave Fist",
+    "DESCRIPTION": "Deal !D! damage to a random enemy 1 time for each enemy in combat."
+  },
+  "NobleWarrior:WeaponBreak":
+  {
+    "NAME": "Weapon Break",
+    "DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength this turn."
+  },
+  "NobleWarrior:WeaponGuard":
+  {
+    "NAME": "Weapon Guard",
+    "DESCRIPTION": "Gain !B! Block. Whenever you are attacked this turn, deal !M! damage back."
+  },
+  "NobleWarrior:WhirlingDefense":
+  {
+    "NAME": "Whirling Defense",
+    "DESCRIPTION": "Gain !B! Block. Whenever you are attacked this turn, deal !M! damage back."
+  },
+  "NobleWarrior:WildShot":
+  {
+    "NAME": "Wild Shot",
+    "DESCRIPTION": "Deal !D! damage, then deal !D! damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, then deal !D! damage to a random enemy twice."
+  },
+  "NobleWarrior:WindBlast":
+  {
+    "NAME": "Wind Blast",
+    "DESCRIPTION": "Deal !D! damage and apply 1 Slow."
+  },
+  "NobleWarrior:WithKnives":
+  {
+    "NAME": "With Knives",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Shuffle up to !M! cards from your discard pile into your draw pile."
+  },
+  "NobleWarrior:Yell":
+  {
+    "NAME": "Yell",
+    "DESCRIPTION": "Exhaust 1 card. NL Gain !M! Dexterity."
+  }
+}

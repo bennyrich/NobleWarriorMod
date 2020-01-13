@@ -1,0 +1,129 @@
+{
+  "NobleWarrior:ArmUp": {
+    "NAME": "Arm Up",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+      " #yStrength and #yDexterity."
+    ]
+  },
+  "NobleWarrior:BodyLanguage": {
+    "NAME": "Body Language",
+    "DESCRIPTIONS": [
+      "At the start of your turn, draw a card then #yExhaust a card."
+    ]
+  },
+  "NobleWarrior:CombatTraining": {
+    "NAME": "Combat Training",
+    "DESCRIPTIONS": [
+      "If you play #b",
+      " more #yAttack card in a row, gain #b",
+      " #yStrength.",
+      " more #yAttack cards in a row, gain #b"
+    ]
+  },
+  "NobleWarrior:CounterGeo": {
+    "NAME": "Counter Geo",
+    "DESCRIPTIONS": [
+      "When an enemy attacks you, apply a random debuff to it."
+    ]
+  },
+  "NobleWarrior:DesperateDefense": {
+    "NAME": "Desperate Defense",
+    "DESCRIPTIONS": [
+      "The first time you play an #yAttack each turn, play a random #ySkill from your deck."
+    ]
+  },
+  "NobleWarrior:Fury": {
+    "NAME": "Fury",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yBlock when you play an #yAttack."
+    ]
+  },
+  "NobleWarrior:GilSnapper": {
+    "NAME": "Gil Snapper",
+    "DESCRIPTIONS": [
+      "When you receive unblocked damage, gain that amount of #yGold."
+    ]
+  },
+  "NobleWarrior:HighJump": {
+    "NAME": "High Jump",
+    "DESCRIPTIONS": [
+      "At the beginning of your next turn, you will deal #b",
+      " damage."
+    ]
+  },
+  "NobleWarrior:Jump": {
+    "NAME": "Jump",
+    "DESCRIPTIONS": [
+      "At the beginning of your next turn, you will deal #b",
+      " damage."
+    ]
+  },
+  "NobleWarrior:MountingFury": {
+    "NAME": "Mounting Fury",
+    "DESCRIPTIONS": [
+      "At the start of your turn, deal #b",
+      " damage to ALL enemies, then increase this value by #b",
+      "."
+    ]
+  },
+  "NobleWarrior:Polka": {
+    "NAME": "Polka",
+    "DESCRIPTIONS": [
+      "Deal #b",
+      " damage to ALL enemies whenever you draw a card."
+    ]
+  },
+  "NobleWarrior:ScatterTheAshes": {
+    "NAME": "Scatter the Ashes",
+    "DESCRIPTIONS": [
+      "Whenever you #yExhaust a card, deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  "NobleWarrior:Sift": {
+    "NAME": "Sift",
+    "DESCRIPTIONS": [
+      "At the start of your turn, you may discard a card. If you do, #yUpgrade a card in your hand for the rest of combat."
+    ]
+  },
+  "NobleWarrior:SunkenState": {
+    "NAME": "Sunken State",
+    "DESCRIPTIONS": [
+      "Whenever you play a 0-cost card, draw a card and gain #b",
+      " #yBlock."
+    ]
+  },
+  "NobleWarrior:SuperJump": {
+    "NAME": "Super Jump",
+    "DESCRIPTIONS": [
+      "At the beginning of your next turn, you will deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  "NobleWarrior:UnlimitedArsenal": {
+    "NAME": "Unlimited Arsenal",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " random #yThrowing weapon into your hand.",
+      " random #yThrowing weapons into your hand.",
+      " random #yupgraded #yThrowing weapon into your hand.",
+      " random #yupgraded #yThrowing weapons into your hand."
+    ]
+  },
+  "NobleWarrior:WalkOnWater": {
+    "NAME": "Walk on Water",
+    "DESCRIPTIONS": [
+      "Whenever you create a card, gain #b",
+      " #yStrength or #yDexterity at random."
+    ]
+  },
+  "NobleWarrior:WaterMovement": {
+    "NAME": "Water Movement",
+    "DESCRIPTIONS": [
+      "Whenever you create a card, gain ",
+      " and draw a card."
+    ]
+  }
+}

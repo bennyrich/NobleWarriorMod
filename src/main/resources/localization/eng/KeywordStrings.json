@@ -1,0 +1,47 @@
+[
+  {
+    "DESCRIPTION": "An enemy with Blind will miss 50% of attacks. The icon will flash if Blind will activate.",
+    "NAMES": ["blind", "blinded"],
+    "PROPER_NAME": "Blind"
+  },
+  {
+    "DESCRIPTION": "If an enemy with Charm would attack, it attacks a random monster instead.",
+    "NAMES": ["charm", "charmed"],
+    "PROPER_NAME": "Charm"
+  },
+  {
+    "DESCRIPTION": "If an enemy with Confuse would attack, it has a 30% chance to attack a random monster instead. The icon will flash if Confuse will activate.",
+    "NAMES": ["confuse", "confused"],
+    "PROPER_NAME": "Confuse"
+  },
+  {
+    "DESCRIPTION": "An enemy with Immobilize cannot gain Block.",
+    "NAMES": ["immobilize", "immobilized"],
+    "PROPER_NAME": "Immobilize"
+  },
+  {
+    "DESCRIPTION": "An enemy with Sleep cannot act. Will wake when attacked. If Sleep wears off without being woken, heals to full and gains 4 Strength.",
+    "NAMES": ["sleep", "slept"],
+    "PROPER_NAME": "Sleep"
+  },
+  {
+    "DESCRIPTION": "An enemy with Slow takes 10% more damage for each card played during the turn.",
+    "NAMES": ["slow", "slowed"],
+    "PROPER_NAME": "Slow"
+  },
+  {
+    "DESCRIPTION": "Each enemy may only be Stolen from 1 time.",
+    "NAMES": ["steal", "stolen"],
+    "PROPER_NAME": "Steal"
+  },
+  {
+    "DESCRIPTION": "A throwing weapon is a 0-cost attack. There are six different weapons with various effects.",
+    "NAMES": ["throwing"],
+    "PROPER_NAME": "Throwing"
+  },
+  {
+    "DESCRIPTION": "An enemy with Toad cannot inflict debuffs.",
+    "NAMES": ["toad"],
+    "PROPER_NAME": "Toad"
+  }
+]
