@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class CombatTraining extends CustomCard {
+public class CombatTraining extends AbstractClassCard {
 
     private static final String ID = "NobleWarrior:CombatTraining";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -28,7 +28,7 @@ public class CombatTraining extends CustomCard {
 
     public CombatTraining() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST,
-                DESCRIPTION, AbstractCard.CardType.POWER, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.RARE, AbstractCard.CardTarget.SELF);
+                DESCRIPTION, AbstractCard.CardType.POWER, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.RARE, AbstractCard.CardTarget.SELF, CardTagsEnum.SQUIRE);
 
         this.baseMagicNumber = this.magicNumber = STRENGTH;
 

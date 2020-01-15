@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 
-public class Yell extends CustomCard {
+public class Yell extends AbstractClassCard {
 
     private static final String ID = "NobleWarrior:Yell";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -30,7 +30,7 @@ public class Yell extends CustomCard {
 
     public Yell() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST,
-                DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
+                DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, CardTagsEnum.SQUIRE);
 
         this.baseMagicNumber = this.magicNumber = DEXTERITY;
 
@@ -38,7 +38,7 @@ public class Yell extends CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ExhaustAction((AbstractCreature)p, (AbstractCreature)p, BASE_EXHAUST, false));
+        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ExhaustAction(BASE_EXHAUST, false, false, false));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p,
             (AbstractPower)new DexterityPower((AbstractCreature)p, this.magicNumber), this.magicNumber));
     }

@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import NobleWarriorMod.actions.GainHeightAction;
 
-public class GainHeight extends CustomCard {
+public class GainHeight extends AbstractClassCard {
     private static final String ID = "NobleWarrior:GainHeight";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = cardStrings.NAME;
@@ -24,7 +24,7 @@ public class GainHeight extends CustomCard {
 
     public GainHeight() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST,
-                DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.RARE, AbstractCard.CardTarget.SELF);
+                DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.RARE, AbstractCard.CardTarget.SELF, CardTagsEnum.ARCHER);
 
         this.baseMagicNumber = this.magicNumber = STRENGTH_MULTI;
         this.exhaust = true;

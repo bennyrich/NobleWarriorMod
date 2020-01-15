@@ -1,6 +1,5 @@
 package NobleWarriorMod.actions;
 
-import NobleWarriorMod.characters.NobleWarrior;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.LoseBlockAction;

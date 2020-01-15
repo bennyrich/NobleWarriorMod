@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import NobleWarriorMod.powers.SuperJumpPower;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class SuperJump extends CustomCard {
+public class SuperJump extends AbstractClassCard {
     public static final String ID = "NobleWarrior:SuperJump";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
@@ -29,10 +29,10 @@ public class SuperJump extends CustomCard {
 
     public SuperJump() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST,
-                DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.RARE, CardTarget.ALL_ENEMY);
+                DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.RARE, CardTarget.ALL_ENEMY, CardTagsEnum.LANCER);
 
         this.baseDamage = this.damage = ATTACK_DMG;
-
+        this.isMultiDamage = true;
         this.tags.add(CardTagsEnum.LANCER);
     }
 

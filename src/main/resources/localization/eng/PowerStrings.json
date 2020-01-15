@@ -30,7 +30,9 @@
   "NobleWarrior:DesperateDefense": {
     "NAME": "Desperate Defense",
     "DESCRIPTIONS": [
-      "The first time you play an #yAttack each turn, play a random #ySkill from your deck."
+      "The first #b",
+      " time you play an #yAttack each turn, play a random #ySkill from your deck.",
+      " times you play an #yAttack each turn, play a random #ySkill from your deck."
     ]
   },
   "NobleWarrior:Fury": {

@@ -92,7 +92,8 @@
   "NobleWarrior:ChargeUp":
   {
     "NAME": "Charge Up",
-    "DESCRIPTION": "Gain !M! Strength. You can't play this on the same turn you play an Attack."
+    "DESCRIPTION": "Cannot be played the same turn you play an Attack. NL Gain !M! Strength.",
+    "EXTENDED_DESCRIPTION": [ "I have played an Attack this turn." ]
   },
   "NobleWarrior:CombatTraining":
   {
@@ -318,7 +319,7 @@
   "NobleWarrior:RainOfArrows":
   {
     "NAME": "Rain of Arrows",
-    "DESCRIPTION": "Deal !D! damage, then deal !D! damage for each Attack played this turn."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies for each Attack played this turn."
   },
   "NobleWarrior:Reflexes":
   {
@@ -514,8 +515,7 @@
   "NobleWarrior:WildShot":
   {
     "NAME": "Wild Shot",
-    "DESCRIPTION": "Deal !D! damage, then deal !D! damage to a random enemy.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage, then deal !D! damage to a random enemy twice."
+    "DESCRIPTION": "Deal !D! damage, then deal !D! damage to a random enemy twice."
   },
   "NobleWarrior:WindBlast":
   {

@@ -27,7 +27,7 @@ public class ThrowStoneAction extends AbstractGameAction {
 
     public void update() {
         monsters.forEach(monster -> {
-            if(lowestHealth == 0 || monster.currentHealth < lowestHealth) {
+            if(!monster.isDead && (lowestHealth == 0 || monster.currentHealth < lowestHealth)) {
                 lowestHealth = monster.currentHealth;
                 targetMonster = monster;
             }

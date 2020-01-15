@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import NobleWarriorMod.actions.EquipArmorAction;
 
-public class EquipArmor extends CustomCard {
+public class EquipArmor extends AbstractClassCard {
     private static final String ID = "NobleWarrior:EquipArmor";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = cardStrings.NAME;
@@ -29,7 +29,7 @@ public class EquipArmor extends CustomCard {
 
     public EquipArmor() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST,
-                DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.COMMON, AbstractCard.CardTarget.SELF);
+                DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.COMMON, AbstractCard.CardTarget.SELF, CardTagsEnum.SQUIRE);
 
         this.baseMagicNumber = this.magicNumber = METALLICIZE;
         this.baseBlock = this.block = BLOCK_AMOUNT;

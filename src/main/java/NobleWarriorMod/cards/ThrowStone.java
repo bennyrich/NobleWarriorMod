@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import NobleWarriorMod.enums.CardTagsEnum;
 
-public class ThrowStone extends CustomCard {
+public class ThrowStone extends AbstractClassCard {
     private static final String ID = "NobleWarrior:ThrowStone";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = cardStrings.NAME;
@@ -24,7 +24,7 @@ public class ThrowStone extends CustomCard {
 
     public ThrowStone() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST,
-                DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCardEnum.NOBLEWARRIOR_ORANGE, AbstractCard.CardRarity.COMMON, CardTarget.ALL_ENEMY);
+                DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCardEnum.NOBLEWARRIOR_ORANGE, AbstractCard.CardRarity.COMMON, CardTarget.ALL_ENEMY, CardTagsEnum.SQUIRE);
 
         this.baseDamage = this.damage = ATTACK_DMG;
 

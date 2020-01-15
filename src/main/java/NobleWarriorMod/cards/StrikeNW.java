@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class StrikeNW extends CustomCard {
+public class StrikeNW extends AbstractClassCard {
     private static final String ID = "NobleWarrior:StrikeNW";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = cardStrings.NAME;
@@ -25,13 +25,13 @@ public class StrikeNW extends CustomCard {
     private static final int UPGRADE_PLUS_ATTACK_DMG = 3;
 
     public StrikeNW() {
-        super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST,
-                DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCardEnum.NOBLEWARRIOR_ORANGE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
+        super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
+                AbstractCardEnum.NOBLEWARRIOR_ORANGE, AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY, null);
 
         this.baseDamage = this.damage = ATTACK_DMG;
 
         this.tags.add(AbstractCard.CardTags.STRIKE);
-        this.tags.add(BaseModCardTags.BASIC_STRIKE);
+        this.tags.add(CardTags.STARTER_STRIKE);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) { AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)m,

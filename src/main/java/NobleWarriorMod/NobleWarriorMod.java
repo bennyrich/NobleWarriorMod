@@ -33,7 +33,7 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
     public static final Logger logger = LogManager.getLogger(NobleWarriorMod.class.getName());
     private static final String MODNAME = "The Noble Warrior";
     private static final String AUTHOR = "Benny and Friends";
-    private static final Color ORANGE = CardHelper.getColor(192.0F, 106.0F, 18.0F);
+    private static final Color ORANGE = CardHelper.getColor(192, 106, 18);
     private static final String DESCRIPTION = "Adds the Noble Warrior as a new playable character, with multiple class choices";
     private static final String ATTACK_ORANGE = "images/cardui/512/bg_attack_orange.png";
     private static final String SKILL_ORANGE = "images/cardui/512/bg_skill_orange.png";
@@ -105,6 +105,12 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         BaseMod.addCard((AbstractCard)new EquipArmor());
         BaseMod.addCard((AbstractCard)new Salve());
         BaseMod.addCard((AbstractCard)new ThrowStone());
+        BaseMod.addCard((AbstractCard)new DesperateDefense());
+        BaseMod.addCard((AbstractCard)new PiercingShot());
+        BaseMod.addCard((AbstractCard)new SwiftShot());
+        BaseMod.addCard((AbstractCard)new VenomShot());
+        BaseMod.addCard((AbstractCard)new WildShot());
+        BaseMod.addCard((AbstractCard)new ChargeUp());
 
         logger.info("Done editing cards");
     }

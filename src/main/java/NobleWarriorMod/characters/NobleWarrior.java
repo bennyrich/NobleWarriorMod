@@ -24,7 +24,7 @@ public class NobleWarrior extends CustomPlayer {
     private static final int ENERGY_PER_TURN = 3;
     private static final int START_HP = 75;
     private static final int START_GOLD = 99;
-    private static final Color ORANGE = CardHelper.getColor(192.0F, 106.0F, 18.0F);
+    private static final Color ORANGE = CardHelper.getColor(192, 106, 18);
     private static final String CHAR_SHOULDER_1 = "images/character/shoulder.png";
     private static final String CHAR_SHOULDER_2 = "images/character/shoulder2.png";
     private static final String CHAR_CORPSE = "images/character/corpse.png";
@@ -88,16 +88,16 @@ public class NobleWarrior extends CustomPlayer {
         ArrayList<String> startingDeck = new ArrayList<>();
         startingDeck.add("NobleWarrior:StrikeNW");
         startingDeck.add("NobleWarrior:StrikeNW");
-        startingDeck.add("NobleWarrior:StrikeNW");
+        startingDeck.add("NobleWarrior:WildShot");
         //startingDeck.add("NobleWarrior:StrikeNW");
         //startingDeck.add("NobleWarrior:StrikeNW");
-        startingDeck.add("NobleWarrior:DefendNW");
+        startingDeck.add("NobleWarrior:ChargeUp");
         startingDeck.add("NobleWarrior:DefendNW");
         startingDeck.add("NobleWarrior:DefendNW");
         //startingDeck.add("NobleWarrior:DefendNW");
-        startingDeck.add("NobleWarrior:GainHeight");
-        startingDeck.add("NobleWarrior:EquipArmor");
-        startingDeck.add("NobleWarrior:SuperJump");
+        startingDeck.add("NobleWarrior:PiercingShot");
+        startingDeck.add("NobleWarrior:SwiftShot");
+        startingDeck.add("NobleWarrior:VenomShot");
         startingDeck.add("NobleWarrior:BalancedStrike");
 
         return startingDeck;
