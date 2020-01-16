@@ -1,7 +1,5 @@
 package NobleWarriorMod.cards;
 
-import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
 import NobleWarriorMod.NobleWarriorMod;
 import NobleWarriorMod.enums.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

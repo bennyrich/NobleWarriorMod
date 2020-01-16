@@ -87,7 +87,11 @@
   "NobleWarrior:Sift": {
     "NAME": "Sift",
     "DESCRIPTIONS": [
-      "At the start of your turn, you may discard a card. If you do, #yUpgrade a card in your hand for the rest of combat."
+      "At the start of your turn, you may discard #b",
+      " card. If you do, #yUpgrade #b",
+      " card in your hand for the rest of combat.",
+      " cards. If you do, #yUpgrade #b",
+      " cards in your hand for the rest of combat."
     ]
   },
   "NobleWarrior:SunkenState": {

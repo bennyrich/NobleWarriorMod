@@ -28,8 +28,8 @@
   "NobleWarrior:ArmUp":
   {
     "NAME": "Arm Up",
-    "DESCRIPTION": "At the start of your turn, gain 1 Strength and Dexterity.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, gain 1 Strength and Dexterity."
+    "DESCRIPTION": "Exhaust a card from your discard pile. NL Choose a card in your discard pile and create a copy of it in your deck.",
+    "UPGRADE_DESCRIPTION": "Exhaust a card from your discard pile. NL Choose a card in your discard pile and create a copy of it in your deck. NL Retain."
   },
   "NobleWarrior:ArmorBreak":
   {
@@ -44,7 +44,8 @@
   "NobleWarrior:BodyLanguage":
   {
     "NAME": "Body Language",
-    "DESCRIPTION": "At the start of your turn, draw 1 card then Exhaust 1 card."
+    "DESCRIPTION": "At the start of your turn, draw 1 card then Exhaust 1 card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, draw 1 card then Exhaust 1 card."
   },
   "NobleWarrior:BombToss":
   {

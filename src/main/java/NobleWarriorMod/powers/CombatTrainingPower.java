@@ -61,10 +61,8 @@ public class CombatTrainingPower extends AbstractPower {
         }
     }
 
-
     public void atStartOfTurn() {
         this.amount = ATTACK_AMT;
         updateDescription();
     }
-
 }

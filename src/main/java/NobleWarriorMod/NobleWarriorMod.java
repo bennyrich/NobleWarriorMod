@@ -5,6 +5,7 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -50,6 +52,7 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
     private static final String RELIC_STRINGS = "localization/eng/RelicStrings.json";
     private static final String POWER_STRINGS = "localization/eng/PowerStrings.json";
     private static final String KEYWORD_STRINGS = "localization/eng/KeywordStrings.json";
+    private static final String UI_STRINGS = "localization/eng/UIStrings.json";
     private static final String MODBADGE = "images/badge.png";
 
     public NobleWarriorMod() {
@@ -111,6 +114,10 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         BaseMod.addCard((AbstractCard)new VenomShot());
         BaseMod.addCard((AbstractCard)new WildShot());
         BaseMod.addCard((AbstractCard)new ChargeUp());
+        BaseMod.addCard((AbstractCard)new LayOfTheLand());
+        BaseMod.addCard((AbstractCard)new RainOfArrows());
+        BaseMod.addCard((AbstractCard)new SeekCover());
+        BaseMod.addCard((AbstractCard)new Sift());
 
         logger.info("Done editing cards");
     }
@@ -121,6 +128,7 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         BaseMod.loadCustomStringsFile(RelicStrings.class, RELIC_STRINGS);
         BaseMod.loadCustomStringsFile(CardStrings.class, CARD_STRINGS);
         BaseMod.loadCustomStringsFile(PowerStrings.class, POWER_STRINGS);
+        BaseMod.loadCustomStringsFile(UIStrings.class, UI_STRINGS);
 
         logger.info("Done editing strings");
     }
