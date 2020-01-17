@@ -9,7 +9,10 @@
   "NobleWarrior:BodyLanguage": {
     "NAME": "Body Language",
     "DESCRIPTIONS": [
-      "At the start of your turn, draw a card then #yExhaust a card."
+      "At the start of your turn, draw a card then #yExhaust a card",
+      ".",
+      ", #b",
+      " times."
     ]
   },
   "NobleWarrior:CombatTraining": {
@@ -33,6 +36,13 @@
       "The first #b",
       " time you play an #yAttack each turn, play a random #ySkill from your deck.",
       " times you play an #yAttack each turn, play a random #ySkill from your deck."
+    ]
+  },
+  "NobleWarrior:Fly": {
+    "NAME": "Fly",
+    "DESCRIPTIONS": [
+      "Incoming #yAttack damage is reduced by #b",
+      "% this turn."
     ]
   },
   "NobleWarrior:Fury": {

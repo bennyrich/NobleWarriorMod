@@ -5,5 +5,11 @@
       " Card to Discard.",
       " Cards to Discard.",
     ]
+  },
+  "NobleWarrior:WithKnivesAction": {
+    "TEXT": [
+      "Choose ",
+      " cards to shuffle to your deck."
+    ]
   }
 }

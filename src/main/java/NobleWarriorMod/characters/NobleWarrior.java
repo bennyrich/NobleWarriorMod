@@ -88,16 +88,16 @@ public class NobleWarrior extends CustomPlayer {
         ArrayList<String> startingDeck = new ArrayList<>();
         startingDeck.add("NobleWarrior:StrikeNW");
         startingDeck.add("NobleWarrior:StrikeNW");
-        startingDeck.add("NobleWarrior:Sift");
+        startingDeck.add("NobleWarrior:Disillusion");
         //startingDeck.add("NobleWarrior:StrikeNW");
         //startingDeck.add("NobleWarrior:StrikeNW");
         startingDeck.add("NobleWarrior:DefendNW");
         startingDeck.add("NobleWarrior:DefendNW");
-        startingDeck.add("NobleWarrior:DefendNW");
+        startingDeck.add("NobleWarrior:BodyLanguage");
         //startingDeck.add("NobleWarrior:DefendNW");
-        startingDeck.add("NobleWarrior:LayOfTheLand");
-        startingDeck.add("NobleWarrior:RainOfArrows");
-        startingDeck.add("NobleWarrior:Sift");
+        startingDeck.add("NobleWarrior:ReverseFlourish");
+        startingDeck.add("NobleWarrior:CallUponTheEarth");
+        startingDeck.add("NobleWarrior:Kamaitachi");
         startingDeck.add("NobleWarrior:BalancedStrike");
 
         return startingDeck;

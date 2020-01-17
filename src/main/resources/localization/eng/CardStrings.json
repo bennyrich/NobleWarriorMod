@@ -383,7 +383,7 @@
   "NobleWarrior:SlowDance":
   {
     "NAME": "Slow Dance",
-    "DESCRIPTION": "Deal !D! damage and apply !M! Slow to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage and apply Slow to ALL enemies."
   },
   "NobleWarrior:SpeedBreak":
   {

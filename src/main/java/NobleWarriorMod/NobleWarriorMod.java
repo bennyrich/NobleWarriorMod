@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import jdk.nashorn.internal.codegen.CompilerConstants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import basemod.BaseMod;
@@ -118,6 +119,15 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         BaseMod.addCard((AbstractCard)new RainOfArrows());
         BaseMod.addCard((AbstractCard)new SeekCover());
         BaseMod.addCard((AbstractCard)new Sift());
+        BaseMod.addCard((AbstractCard)new Disillusion());
+        BaseMod.addCard((AbstractCard)new FanDance());
+        BaseMod.addCard((AbstractCard)new WithKnives());
+        BaseMod.addCard((AbstractCard)new Fly());
+        BaseMod.addCard((AbstractCard)new BodyLanguage());
+        BaseMod.addCard((AbstractCard)new ReverseFlourish());
+        BaseMod.addCard((AbstractCard)new SlowDance());
+        BaseMod.addCard((AbstractCard)new CallUponTheEarth());
+        BaseMod.addCard((AbstractCard)new Kamaitachi());
 
         logger.info("Done editing cards");
     }
