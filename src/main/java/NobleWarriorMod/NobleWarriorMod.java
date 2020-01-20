@@ -128,6 +128,8 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         BaseMod.addCard((AbstractCard)new SlowDance());
         BaseMod.addCard((AbstractCard)new CallUponTheEarth());
         BaseMod.addCard((AbstractCard)new Kamaitachi());
+        BaseMod.addCard((AbstractCard)new Pitfall());
+        BaseMod.addCard((AbstractCard)new Snowstorm());
 
         logger.info("Done editing cards");
     }

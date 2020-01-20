@@ -10,7 +10,7 @@
     "PROPER_NAME": "Charm"
   },
   {
-    "DESCRIPTION": "If an enemy with Confuse would attack, it has a 30% chance to attack a random monster instead. The icon will flash if Confuse will activate.",
+    "DESCRIPTION": "If an enemy with Confuse would attack, it will attack a random monster instead.",
     "NAMES": ["confuse", "confused"],
     "PROPER_NAME": "Confuse"
   },
@@ -40,8 +40,8 @@
     "PROPER_NAME": "Throwing"
   },
   {
-    "DESCRIPTION": "An enemy with Toad cannot inflict debuffs.",
-    "NAMES": ["toad"],
-    "PROPER_NAME": "Toad"
+    "DESCRIPTION": "An enemy with Silence cannot inflict debuffs.",
+    "NAMES": ["silence", "silenced"],
+    "PROPER_NAME": "Silence"
   }
 ]

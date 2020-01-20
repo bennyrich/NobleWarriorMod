@@ -385,6 +385,11 @@
     "NAME": "Slow Dance",
     "DESCRIPTION": "Deal !D! damage and apply Slow to ALL enemies."
   },
+  "NobleWarrior:Snowstorm":
+  {
+    "NAME": "Snowstorm",
+    "DESCRIPTION": "Gain !B! Block. Apply !M! Silence."
+  },
   "NobleWarrior:SpeedBreak":
   {
     "NAME": "Speed Break",

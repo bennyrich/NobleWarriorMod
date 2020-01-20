@@ -24,6 +24,12 @@
       " more #yAttack cards in a row, gain #b"
     ]
   },
+  "NobleWarrior:Confuse": {
+    "NAME": "Confuse",
+    "DESCRIPTIONS": [
+      "Will target an ally when it attacks."
+    ]
+  },
   "NobleWarrior:CounterGeo": {
     "NAME": "Counter Geo",
     "DESCRIPTIONS": [
@@ -65,6 +71,14 @@
       " damage."
     ]
   },
+  "NobleWarrior:Immobilize": {
+    "NAME": "Immobilize",
+    "DESCRIPTIONS": [
+      "Cannot gain #yBlock for #b",
+      " turn.",
+      " turns."
+    ]
+  },
   "NobleWarrior:Jump": {
     "NAME": "Jump",
     "DESCRIPTIONS": [
@@ -102,6 +116,14 @@
       " card in your hand for the rest of combat.",
       " cards. If you do, #yUpgrade #b",
       " cards in your hand for the rest of combat."
+    ]
+  },
+  "NobleWarrior:Silence": {
+    "NAME": "Silence",
+    "DESCRIPTIONS": [
+      "Cannot inflict debuffs for #b",
+      " turn.",
+      " turns."
     ]
   },
   "NobleWarrior:SunkenState": {
