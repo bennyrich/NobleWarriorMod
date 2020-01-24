@@ -31,7 +31,7 @@ public abstract class AbstractClassCard extends CustomCard {
 
     }
     private String cardHeader;
-    protected static boolean CAN_PLAY_ATTACK = true;
+    public static boolean CAN_PLAY_ATTACK = true;
 
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         if(this.type == CardType.ATTACK) {

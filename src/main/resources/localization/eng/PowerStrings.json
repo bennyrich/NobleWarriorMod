@@ -1,9 +1,39 @@
 {
+  "NobleWarrior:AdrenalineRush": {
+    "NAME": "Adrenaline Rush",
+    "DESCRIPTIONS": [
+      "At end of your turn, lose #b",
+      " HP and gain #b",
+      " #yBlock."
+    ]
+  },
+  "NobleWarrior:AggressiveGuard": {
+    "NAME": "Aggressive Guard",
+    "DESCRIPTIONS": [
+      "When you gain #yBlock this turn, deal #b",
+      " damage to a random enemy."
+    ]
+  },
   "NobleWarrior:ArmUp": {
     "NAME": "Arm Up",
     "DESCRIPTIONS": [
       "At the start of your turn, gain #b",
       " #yStrength and #yDexterity."
+    ]
+  },
+  "NobleWarrior:AttackBoost": {
+    "NAME": "Attack Boost",
+    "DESCRIPTIONS": [
+      "The first #yAttack you play each turn gets #b",
+      " extra damage."
+    ]
+  },
+  "NobleWarrior:Blind": {
+    "NAME": "Blind",
+    "DESCRIPTIONS": [
+      "Deals 50% less damage for the next #b",
+      " turn. Does not stack with #yWeak.",
+      " turns. Does not stack with #yWeak."
     ]
   },
   "NobleWarrior:BodyLanguage": {
@@ -30,8 +60,8 @@
       "Will target an ally when it attacks."
     ]
   },
-  "NobleWarrior:CounterGeo": {
-    "NAME": "Counter Geo",
+  "NobleWarrior:CounterFlood": {
+    "NAME": "Counter Flood",
     "DESCRIPTIONS": [
       "When an enemy attacks you, apply a random debuff to it."
     ]
@@ -42,6 +72,12 @@
       "The first #b",
       " time you play an #yAttack each turn, play a random #ySkill from your deck.",
       " times you play an #yAttack each turn, play a random #ySkill from your deck."
+    ]
+  },
+  "NobleWarrior:EvasiveJump": {
+    "NAME": "Evasive Jump",
+    "DESCRIPTIONS": [
+      "Enemies deal no attack damage to you this turn."
     ]
   },
   "NobleWarrior:Fly": {
@@ -64,13 +100,6 @@
       "When you receive unblocked damage, gain that amount of #yGold."
     ]
   },
-  "NobleWarrior:HighJump": {
-    "NAME": "High Jump",
-    "DESCRIPTIONS": [
-      "At the beginning of your next turn, you will deal #b",
-      " damage."
-    ]
-  },
   "NobleWarrior:Immobilize": {
     "NAME": "Immobilize",
     "DESCRIPTIONS": [
@@ -83,7 +112,11 @@
     "NAME": "Jump",
     "DESCRIPTIONS": [
       "At the beginning of your next turn, you will deal #b",
-      " damage."
+      " damage to ",
+      " damage to ALL enemies. ",
+      ".",
+      ", #b",
+      ", and #b"
     ]
   },
   "NobleWarrior:MountingFury": {
@@ -99,6 +132,14 @@
     "DESCRIPTIONS": [
       "Deal #b",
       " damage to ALL enemies whenever you draw a card."
+    ]
+  },
+  "NobleWarrior:RetainOneTurn": {
+    "NAME": "Calculated Strike",
+    "DESCRIPTIONS": [
+      "Retain #b",
+      " card this turn.",
+      " cards this turn."
     ]
   },
   "NobleWarrior:ScatterTheAshes": {
@@ -133,13 +174,6 @@
       " #yBlock."
     ]
   },
-  "NobleWarrior:SuperJump": {
-    "NAME": "Super Jump",
-    "DESCRIPTIONS": [
-      "At the beginning of your next turn, you will deal #b",
-      " damage to ALL enemies."
-    ]
-  },
   "NobleWarrior:UnlimitedArsenal": {
     "NAME": "Unlimited Arsenal",
     "DESCRIPTIONS": [
@@ -162,6 +196,13 @@
     "DESCRIPTIONS": [
       "Whenever you create a card, gain ",
       " and draw a card."
+    ]
+  },
+  "NobleWarrior:WeaponGuard": {
+    "NAME": "Weapon Guard",
+    "DESCRIPTIONS": [
+      "When attacked, deals #b",
+      " damage back."
     ]
   }
 }

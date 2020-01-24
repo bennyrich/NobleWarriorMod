@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import jdk.nashorn.internal.codegen.CompilerConstants;
 import org.apache.logging.log4j.LogManager;
@@ -72,6 +73,17 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         logger.info("Noble Warrior mod initialization complete");
     }
 
+    public static class Utils {
+        public static boolean isAttacking(AbstractMonster mo) {
+            return (mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.ATTACK
+                    || mo.intent == AbstractMonster.Intent.ATTACK_BUFF || mo.intent == AbstractMonster.Intent.ATTACK_DEFEND);
+        }
+        public static boolean isDebuffing(AbstractMonster mo) {
+            return (mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.DEBUFF
+                    || mo.intent == AbstractMonster.Intent.DEFEND_DEBUFF || mo.intent == AbstractMonster.Intent.STRONG_DEBUFF);
+        }
+    }
+
     public static String getCardImagePath(String cardID) { return "images/cards/" + cardID.replaceFirst("NobleWarrior:", "") + ".png"; }
     public static String getRelicImagePath(String cardID) { return "images/relics/" + cardID.replaceFirst("NobleWarrior:", "") + ".png"; }
     public static String getPowerImagePath(String cardID) { return "images/powers/" + cardID.replaceFirst("NobleWarrior:", "") + ".png"; }
@@ -96,40 +108,80 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         logger.info("Begin editing cards");
         logger.info("Add cards for " + NobleWarriorEnum.NOBLEWARRIOR_CLASS.toString());
 
-        BaseMod.addCard((AbstractCard)new StrikeNW());
-        BaseMod.addCard((AbstractCard)new DefendNW());
-        BaseMod.addCard((AbstractCard)new BalancedStrike());
-        BaseMod.addCard((AbstractCard)new Rush());
-        BaseMod.addCard((AbstractCard)new Yell());
-        BaseMod.addCard((AbstractCard)new ThoroughSearch());
-        BaseMod.addCard((AbstractCard)new CombatTraining());
-        BaseMod.addCard((AbstractCard)new SuperJump());
-        BaseMod.addCard((AbstractCard)new GainHeight());
-        BaseMod.addCard((AbstractCard)new Accumulate());
-        BaseMod.addCard((AbstractCard)new EquipArmor());
-        BaseMod.addCard((AbstractCard)new Salve());
-        BaseMod.addCard((AbstractCard)new ThrowStone());
-        BaseMod.addCard((AbstractCard)new DesperateDefense());
-        BaseMod.addCard((AbstractCard)new PiercingShot());
-        BaseMod.addCard((AbstractCard)new SwiftShot());
-        BaseMod.addCard((AbstractCard)new VenomShot());
-        BaseMod.addCard((AbstractCard)new WildShot());
-        BaseMod.addCard((AbstractCard)new ChargeUp());
-        BaseMod.addCard((AbstractCard)new LayOfTheLand());
-        BaseMod.addCard((AbstractCard)new RainOfArrows());
-        BaseMod.addCard((AbstractCard)new SeekCover());
-        BaseMod.addCard((AbstractCard)new Sift());
-        BaseMod.addCard((AbstractCard)new Disillusion());
-        BaseMod.addCard((AbstractCard)new FanDance());
-        BaseMod.addCard((AbstractCard)new WithKnives());
-        BaseMod.addCard((AbstractCard)new Fly());
-        BaseMod.addCard((AbstractCard)new BodyLanguage());
-        BaseMod.addCard((AbstractCard)new ReverseFlourish());
-        BaseMod.addCard((AbstractCard)new SlowDance());
-        BaseMod.addCard((AbstractCard)new CallUponTheEarth());
-        BaseMod.addCard((AbstractCard)new Kamaitachi());
-        BaseMod.addCard((AbstractCard)new Pitfall());
-        BaseMod.addCard((AbstractCard)new Snowstorm());
+        BaseMod.addCard(new StrikeNW());
+        BaseMod.addCard(new DefendNW());
+        // SQUIRE
+        BaseMod.addCard(new BalancedStrike());
+        BaseMod.addCard(new Rush());
+        BaseMod.addCard(new Yell());
+        BaseMod.addCard(new ThoroughSearch());
+        BaseMod.addCard(new CombatTraining());
+        BaseMod.addCard(new Accumulate());
+        BaseMod.addCard(new EquipArmor());
+        BaseMod.addCard(new Salve());
+        BaseMod.addCard(new ThrowStone());
+        BaseMod.addCard(new DesperateDefense());
+        // ARCHER
+        BaseMod.addCard(new GainHeight());
+        BaseMod.addCard(new PiercingShot());
+        BaseMod.addCard(new SwiftShot());
+        BaseMod.addCard(new VenomShot());
+        BaseMod.addCard(new WildShot());
+        BaseMod.addCard(new ChargeUp());
+        //BaseMod.addCard(new LayOfTheLand());  //DEPRECATED
+        BaseMod.addCard(new RainOfArrows());
+        BaseMod.addCard(new SeekCover());
+        BaseMod.addCard(new Sift());
+        BaseMod.addCard(new AdrenalineRush());
+        // DANCER
+        BaseMod.addCard(new Disillusion());
+        BaseMod.addCard(new FanDance());
+        BaseMod.addCard(new WithKnives());
+        BaseMod.addCard(new Fly());
+        BaseMod.addCard(new BodyLanguage());
+        BaseMod.addCard(new ReverseFlourish());
+        BaseMod.addCard(new SlowDance());
+        BaseMod.addCard(new BraveUp());
+        BaseMod.addCard(new Polka());
+        BaseMod.addCard(new ForbiddenWaltz());
+        // GEOMANCER
+        BaseMod.addCard(new CallUponTheEarth());
+        BaseMod.addCard(new Kamaitachi());
+        BaseMod.addCard(new Pitfall());
+        BaseMod.addCard(new Snowstorm());
+        BaseMod.addCard(new AttackBoost());
+        BaseMod.addCard(new LawOfTheLand());
+        BaseMod.addCard(new Sandstorm());
+        BaseMod.addCard(new WindBlast());
+        BaseMod.addCard(new CounterFlood());
+        // KNIGHT
+        BaseMod.addCard(new ArmorBreak());
+        BaseMod.addCard(new PowerBreak());
+        BaseMod.addCard(new SpeedBreak());
+        BaseMod.addCard(new TacticalRetreat());
+        BaseMod.addCard(new ArmUp());
+        BaseMod.addCard(new CastleOfStone());
+        BaseMod.addCard(new MindBreak());
+        BaseMod.addCard(new ShieldBreak());
+        BaseMod.addCard(new WeaponBreak());
+        BaseMod.addCard(new WeaponGuard());
+        // LANCER
+        BaseMod.addCard(new SuperJump());
+        BaseMod.addCard(new HighJump());
+        BaseMod.addCard(new Jump());
+        BaseMod.addCard(new AggressiveGuard());
+        BaseMod.addCard(new CalculatedStrike());
+        BaseMod.addCard(new ObserveBattle());
+        BaseMod.addCard(new PolearmGuard());
+        BaseMod.addCard(new WhirlingDefense());
+        BaseMod.addCard(new MountingFury());
+        BaseMod.addCard(new EvasiveJump());
+        // MONK
+        BaseMod.addCard(new Brawler());
+        BaseMod.addCard(new RepeatingFist());
+        BaseMod.addCard(new SpinFist());
+        BaseMod.addCard(new SwiftStep());
+        BaseMod.addCard(new Hamedo());
 
         logger.info("Done editing cards");
     }

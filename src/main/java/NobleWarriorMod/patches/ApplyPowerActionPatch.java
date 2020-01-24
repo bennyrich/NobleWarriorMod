@@ -16,9 +16,11 @@ public class ApplyPowerActionPatch {
         @SpirePrefixPatch
         public static SpireReturn Insert(ApplyPowerAction __instance) {
             AbstractPower patchedPowerToApply = (AbstractPower)getPrivate(__instance, ApplyPowerAction.class, "powerToApply");
-            if(__instance.source.hasPower(SilencePower.POWER_ID) && __instance.target.isPlayer && patchedPowerToApply.type == AbstractPower.PowerType.DEBUFF) {
-                __instance.isDone = true;
-                return SpireReturn.Return(null);
+            if(__instance.source != null && __instance.target != null) {
+                if (__instance.source.hasPower(SilencePower.POWER_ID) && __instance.target.isPlayer && patchedPowerToApply.type == AbstractPower.PowerType.DEBUFF) {
+                    __instance.isDone = true;
+                    return SpireReturn.Return(null);
+                }
             }
             return SpireReturn.Continue();
         }

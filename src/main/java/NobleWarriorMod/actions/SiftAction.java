@@ -16,7 +16,7 @@ public class SiftAction extends AbstractGameAction {
         this.cardsToDiscard = cardsToDiscard;
         this.cardsToUpgrade = cardsToUpgrade;
         this.wereCardsDiscarded = false;
-        this.duration = this.DURATION;
+        this.duration = DURATION;
         this.actionType = AbstractGameAction.ActionType.DISCARD;
         if(cardsToDiscard == 1) {
             discardHeaderText = TEXT[0] + cardsToDiscard + TEXT[1];

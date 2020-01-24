@@ -1,9 +1,15 @@
 {
+  "NobleWarrior:ArmUpAction": {
+    "TEXT": [
+      "Choose a card from discard to Exhaust.",
+      "Choose a card from discard to create a copy in your deck."
+    ]
+  },
   "NobleWarrior:SiftAction": {
     "TEXT": [
       "Choose up to ",
       " Card to Discard.",
-      " Cards to Discard.",
+      " Cards to Discard."
     ]
   },
   "NobleWarrior:WithKnivesAction": {

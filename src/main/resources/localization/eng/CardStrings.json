@@ -14,6 +14,11 @@
     "NAME": "Accumulate",
     "DESCRIPTION": "Exhaust 1 card. NL Gain !M! Strength."
   },
+  "NobleWarrior:AdrenalineRush":
+  {
+    "NAME": "Adrenaline Rush",
+    "DESCRIPTION": "At the end of your turn, lose 1 HP and gain !M! Block."
+  },
   "NobleWarrior:AggressiveGuard":
   {
     "NAME": "Aggressive Guard",
@@ -36,6 +41,11 @@
     "NAME": "Armor Break",
     "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable."
   },
+  "NobleWarrior:AttackBoost":
+  {
+    "NAME": "Attack Boost",
+    "DESCRIPTION": "The first Attack you play each turn gets !M! extra damage."
+  },
   "NobleWarrior:BalancedStrike":
   {
     "NAME": "Balanced Strike",
@@ -56,13 +66,18 @@
   "NobleWarrior:BraveUp":
   {
     "NAME": "Brave Up",
+    "DESCRIPTION": "Gain 3 Strength. Gain !M! Vulnerable."
+  },
+  "NobleWarrior:BraveUpOLD":
+  {
+    "NAME": "Brave UpOLD",
     "DESCRIPTION": "Exhaust any number of cards. Gain !M! Strength for each card exhausted.",
     "UPGRADE_DESCRIPTION": "Exhaust any number of cards. Gain !M! Strength and !B! Block for each card exhausted."
   },
   "NobleWarrior:Brawler":
   {
     "NAME": "Brawler",
-    "DESCRIPTION": "Gain !B! Block. Draw 1 card if there are no Skills in your hand."
+    "DESCRIPTION": "Gain !B! Block. Draw !M! cards if there are no Skills in your hand."
   },
   "NobleWarrior:CalculatedStrike":
   {
@@ -77,8 +92,8 @@
   "NobleWarrior:CastleOfStone":
   {
     "NAME": "Castle of Stone",
-    "DESCRIPTION": "If 3 or more enemies intend to attack, gain !M! Intangible. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "If 3 or more enemies intend to attack, gain !M! Intangible. NL Exhaust. NL Retain."
+    "DESCRIPTION": "Ethereal. NL Gain 1 Intangible for each enemy that intends to attack. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain 1 Intangible for each enemy that intends to attack. NL Exhaust."
   },
   "NobleWarrior:Catch":
   {
@@ -106,10 +121,10 @@
     "NAME": "Counter",
     "DESCRIPTION": "Gain !M! Thorns for each enemy that intends to attack."
   },
-  "NobleWarrior:CounterGeo":
+  "NobleWarrior:CounterFlood":
   {
-    "NAME": "Counter Geo",
-    "DESCRIPTION": "Whenever an enemy attacks you, apply 1 random debuff to it."
+    "NAME": "Counter Flood",
+    "DESCRIPTION": "Whenever an enemy attacks you, apply a random debuff to it."
   },
   "NobleWarrior:DemonsFire":
   {
@@ -202,7 +217,7 @@
   "NobleWarrior:ForbiddenWaltz":
   {
     "NAME": "Forbidden Waltz",
-    "DESCRIPTION": "Apply !M! Immobilize, Toad, Confuse, Blind, and Slow to ALL enemies."
+    "DESCRIPTION": "Apply !M! Immobilize, Silence, Blind, and Slow to ALL enemies. NL Apply 5 Poison to ALL enemies. NL Exhaust."
   },
   "NobleWarrior:Fury":
   {
@@ -228,7 +243,7 @@
   "NobleWarrior:Hamedo":
   {
     "NAME": "Hamedo",
-    "DESCRIPTION": "Deal !D! damage to each enemy planning to attack. Gain !M! Buffer."
+    "DESCRIPTION": "Deal !D! damage to each enemy planning to attack. Gain 1 Buffer."
   },
   "NobleWarrior:HighJump":
   {
@@ -259,7 +274,7 @@
   "NobleWarrior:LawOfTheLand":
   {
     "NAME": "Law of the Land",
-    "DESCRIPTION": "Deal !M! cards, then Exhaust a card from your hand."
+    "DESCRIPTION": "Draw !M! cards, then Exhaust a card from your hand."
   },
   "NobleWarrior:LayOfTheLand":
   {
@@ -271,6 +286,11 @@
     "NAME": "Local Quake",
     "DESCRIPTION": "Deal !D! damage. Apply !M! Confuse."
   },
+  "NobleWarrior:MartialArts":
+  {
+    "NAME": "Martial Arts",
+    "DESCRIPTION": "Whenever you play a 0-cost card, draw 1 card."
+  },
   "NobleWarrior:MindBreak":
   {
     "NAME": "Mind Break",
@@ -279,7 +299,7 @@
   "NobleWarrior:MountingFury":
   {
     "NAME": "Mounting Fury",
-    "DESCRIPTION": "At the start of your turn, deal !D! damage to ALL enemies, then increase this damage by !M!."
+    "DESCRIPTION": "At the end of your turn, deal 4 damage to ALL enemies, then increase this damage by !M!."
   },
   "NobleWarrior:Muzan":
   {
@@ -304,11 +324,16 @@
   "NobleWarrior:PolearmGuard":
   {
     "NAME": "Polearm Guard",
-    "DESCRIPTION": "Gain !B! Block. If you played another card this turn, draw !M! cards."
+    "DESCRIPTION": "Gain !B! Block. If you played another card this turn, draw !M! card."
   },
   "NobleWarrior:Polka":
   {
     "NAME": "Polka",
+    "DESCRIPTION": "All enemies lose !M! Strength. NL Exhaust."
+  },
+  "NobleWarrior:PolkaOLD":
+  {
+    "NAME": "PolkaOLD",
     "DESCRIPTION": "Whenever you draw a card, deal !D! damage to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Whenever you draw a card, deal !D! damage to ALL enemies. NL Innate."
   },
@@ -331,7 +356,8 @@
   "NobleWarrior:RepeatingFist":
   {
     "NAME": "Repeating Fist",
-    "DESCRIPTION": "Deal !D! damage !M! times, then increase the number of hits by 1 this combat."
+    "DESCRIPTION": "Deal !D! damage !M! times, then increase the number of hits by 1 this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times, then increase the number of hits by 2 this combat."
   },
   "NobleWarrior:ReverseFlourish":
   {
@@ -367,7 +393,7 @@
   "NobleWarrior:ShieldBreak":
   {
     "NAME": "Shield Break",
-    "DESCRIPTION": "Remove all Block from the enemy and deal !D! damage. It can't gain Block for !M! turns."
+    "DESCRIPTION": "Remove all Block from the enemy. Deal !D! damage. Apply !M! Immobilize."
   },
   "NobleWarrior:Sift":
   {
@@ -399,7 +425,7 @@
   {
     "NAME": "Spin Fist",
     "DESCRIPTION": "Deal !D! damage. Return 1 card at random from your discard pile to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Return 1 card of your choice from your discard pile to your hand."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Return 1 card from your discard pile to your hand."
   },
   "NobleWarrior:StealArmor":
   {
@@ -450,7 +476,7 @@
   "NobleWarrior:SwiftStep":
   {
     "NAME": "Swift Step",
-    "DESCRIPTION": "Gain !B! Block. Apply !M! Weak."
+    "DESCRIPTION": "Gain !B! Block twice."
   },
   "NobleWarrior:TacticalRetreat":
   {
@@ -516,7 +542,7 @@
   "NobleWarrior:WhirlingDefense":
   {
     "NAME": "Whirling Defense",
-    "DESCRIPTION": "Gain !B! Block. Whenever you are attacked this turn, deal !M! damage back."
+    "DESCRIPTION": "Gain !B! Block for each enemy in combat."
   },
   "NobleWarrior:WildShot":
   {

@@ -55,6 +55,5 @@ public class SiftPower extends AbstractPower {
         for(int i=0; i < amount; i++) {
             AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new SiftAction((AbstractPlayer)this.owner, this.cardsToDiscard, this.cardsToUpgrade));
         }
-
     }
 }

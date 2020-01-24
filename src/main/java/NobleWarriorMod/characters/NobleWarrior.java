@@ -86,18 +86,18 @@ public class NobleWarrior extends CustomPlayer {
 
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> startingDeck = new ArrayList<>();
-        startingDeck.add("NobleWarrior:StrikeNW");
-        startingDeck.add("NobleWarrior:StrikeNW");
-        startingDeck.add("NobleWarrior:Pitfall");
+        startingDeck.add("NobleWarrior:SwiftStep");
+        startingDeck.add("NobleWarrior:Hamedo");
+        startingDeck.add("NobleWarrior:ObserveBattle");
         //startingDeck.add("NobleWarrior:StrikeNW");
         //startingDeck.add("NobleWarrior:StrikeNW");
-        startingDeck.add("NobleWarrior:DefendNW");
-        startingDeck.add("NobleWarrior:DefendNW");
-        startingDeck.add("NobleWarrior:Snowstorm");
+        startingDeck.add("NobleWarrior:SpinFist");
+        startingDeck.add("NobleWarrior:SwiftStep");
+        startingDeck.add("NobleWarrior:Hamedo");
         //startingDeck.add("NobleWarrior:DefendNW");
-        startingDeck.add("NobleWarrior:ReverseFlourish");
-        startingDeck.add("NobleWarrior:CallUponTheEarth");
-        startingDeck.add("NobleWarrior:Kamaitachi");
+        startingDeck.add("NobleWarrior:Brawler");
+        startingDeck.add("NobleWarrior:Brawler");
+        startingDeck.add("NobleWarrior:RepeatingFist");
         startingDeck.add("NobleWarrior:BalancedStrike");
 
         return startingDeck;
