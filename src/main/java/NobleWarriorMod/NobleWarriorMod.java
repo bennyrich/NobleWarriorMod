@@ -5,18 +5,17 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import jdk.nashorn.internal.codegen.CompilerConstants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import basemod.BaseMod;
@@ -81,6 +80,30 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         public static boolean isDebuffing(AbstractMonster mo) {
             return (mo.intent == AbstractMonster.Intent.ATTACK_DEBUFF || mo.intent == AbstractMonster.Intent.DEBUFF
                     || mo.intent == AbstractMonster.Intent.DEFEND_DEBUFF || mo.intent == AbstractMonster.Intent.STRONG_DEBUFF);
+        }
+        public static AbstractCard getRandomThrowing() {
+            int rand = AbstractDungeon.miscRng.random(1, 6);
+            AbstractCard returnCard;
+            switch (rand) {
+                case 1:
+                    returnCard = new ThrowingSpear();
+                    break;
+                case 2:
+                    returnCard = new ThrowingBomb();
+                    break;
+                case 3:
+                    returnCard = new ThrowingShuriken();
+                    break;
+                case 4:
+                    returnCard = new ThrowingKnife();
+                    break;
+                case 5:
+                    returnCard = new ThrowingAxe();
+                    break;
+                default:
+                    returnCard = new ThrowingHammer();
+            }
+            return returnCard;
         }
     }
 
@@ -154,6 +177,7 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         BaseMod.addCard(new Sandstorm());
         BaseMod.addCard(new WindBlast());
         BaseMod.addCard(new CounterFlood());
+        BaseMod.addCard(new Quicksand());
         // KNIGHT
         BaseMod.addCard(new ArmorBreak());
         BaseMod.addCard(new PowerBreak());
@@ -182,6 +206,29 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         BaseMod.addCard(new SpinFist());
         BaseMod.addCard(new SwiftStep());
         BaseMod.addCard(new Hamedo());
+        BaseMod.addCard(new DoomFist());
+        BaseMod.addCard(new Fury());
+        BaseMod.addCard(new Chakra());
+        BaseMod.addCard(new Counter());
+        BaseMod.addCard(new EarthSlash());
+        // NINJA
+        BaseMod.addCard(new DualWield());
+        BaseMod.addCard(new Ambidexterity());
+        BaseMod.addCard(new BombToss());
+        BaseMod.addCard(new JavelinThrow());
+        BaseMod.addCard(new Reflexes());
+        BaseMod.addCard(new WalkOnWater());
+        BaseMod.addCard(new Muzan());
+        BaseMod.addCard(new Utsusemi());
+        BaseMod.addCard(new SunkenState());
+        BaseMod.addCard(new UnlimitedArsenal());
+        // THIEF
+        BaseMod.addCard(new IntoShadows());
+        BaseMod.addCard(new StealEnergy());
+        BaseMod.addCard(new StealGil());
+        BaseMod.addCard(new Infiltrate());
+        BaseMod.addCard(new Caution());
+        BaseMod.addCard(new GilSnapper());
 
         logger.info("Done editing cards");
     }

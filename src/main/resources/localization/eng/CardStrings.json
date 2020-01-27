@@ -60,8 +60,8 @@
   "NobleWarrior:BombToss":
   {
     "NAME": "Bomb Toss",
-    "DESCRIPTION": "Deal !D! damage. Add !M! Throwing Bombs into your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Add !M! upgraded Throwing Bombs into your hand."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Add !M! Throwing Bombs into your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Add !M! upgraded Throwing Bombs into your hand."
   },
   "NobleWarrior:BraveUp":
   {
@@ -99,6 +99,11 @@
   {
     "NAME": "Catch",
     "DESCRIPTION": "Nullify the next enemy attack and return the same amount of damage to the enemy. NL Exhaust."
+  },
+  "NobleWarrior:Caution":
+  {
+    "NAME": "Caution",
+    "DESCRIPTION": "When you Exhaust a card, gain !M! Strength or !M! Dexterity at random."
   },
   "NobleWarrior:Chakra":
   {
@@ -140,6 +145,11 @@
   {
     "NAME": "Disillusion",
     "DESCRIPTION": "Gain !B! Block. Draw !M! cards. Those cards are Retained this turn."
+  },
+  "NobleWarrior:DoomFist":
+  {
+    "NAME": "Doom Fist",
+    "DESCRIPTION": "Deal !D! damage and apply Doom. NL Exhaust."
   },
   "NobleWarrior:DrawOutAme-no-Murakumo":
   {
@@ -222,7 +232,7 @@
   "NobleWarrior:Fury":
   {
     "NAME": "Fury",
-    "DESCRIPTION": "Gain !B! Block whenever you play an Attack."
+    "DESCRIPTION": "Gain !M! Block whenever you play an Attack."
   },
   "NobleWarrior:GainHeight":
   {
@@ -238,7 +248,8 @@
   "NobleWarrior:GilSnapper":
   {
     "NAME": "Gil Snapper",
-    "DESCRIPTION": "Whenever you receive unblocked damage, gain that amount of Gold."
+    "DESCRIPTION": "Whenever you receive unblocked damage, gain that amount of Gold, up to 50 Gold each combat.",
+    "UPGRADE_DESCRIPTION": "Whenever you receive unblocked damage, gain twice that amount of Gold, up to 50 Gold each combat."
   },
   "NobleWarrior:Hamedo":
   {
@@ -249,6 +260,11 @@
   {
     "NAME": "High Jump",
     "DESCRIPTION": "Deal !D! damage next turn."
+  },
+  "NobleWarrior:Infiltrate":
+  {
+    "NAME": "Infiltrate",
+    "DESCRIPTION": "Copy a card in your hand. It gains Ethereal and Exhaust."
   },
   "NobleWarrior:IntoShadows":
   {
@@ -286,9 +302,9 @@
     "NAME": "Local Quake",
     "DESCRIPTION": "Deal !D! damage. Apply !M! Confuse."
   },
-  "NobleWarrior:MartialArts":
+  "NobleWarrior:DualWield":
   {
-    "NAME": "Martial Arts",
+    "NAME": "Dual Wield",
     "DESCRIPTION": "Whenever you play a 0-cost card, draw 1 card."
   },
   "NobleWarrior:MindBreak":
@@ -341,6 +357,11 @@
   {
     "NAME": "Power Break",
     "DESCRIPTION": "Deal !D! damage and apply !M! Weak."
+  },
+  "NobleWarrior:Quicksand":
+  {
+    "NAME": "Quicksand",
+    "DESCRIPTION": "Apply Doom to ALL enemies. NL Exhaust."
   },
   "NobleWarrior:RainOfArrows":
   {
@@ -436,7 +457,7 @@
   {
     "NAME": "Steal Energy",
     "DESCRIPTION": "Gain !B! Block. If you can Steal, gain [E]. NL Apply 1 Stolen.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. If you can Steal, gain [E][E]. NL Apply 1 Stolen."
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. If you can Steal, gain [E] [E]. NL Apply 1 Stolen."
   },
   "NobleWarrior:StealExp":
   {
@@ -446,7 +467,7 @@
   "NobleWarrior:StealGil":
   {
     "NAME": "Steal Gil",
-    "DESCRIPTION": "Deal !D! damage. If you can Steal, gain Gold equal to unblocked damage dealt. NL Apply 1 Stolen."
+    "DESCRIPTION": "Deal !D! damage. If you can Steal, gain !M! Gold. NL Apply 1 Stolen."
   },
   "NobleWarrior:StealHeart":
   {
@@ -461,7 +482,7 @@
   "NobleWarrior:SunkenState":
   {
     "NAME": "Sunken State",
-    "DESCRIPTION": "Whenever you play a 0-cost card, draw 1 card and gain !M! Block."
+    "DESCRIPTION": "Whenever you play a 0-cost card, gain !M! Block."
   },
   "NobleWarrior:SuperJump":
   {
@@ -493,11 +514,41 @@
     "NAME": "Throw Stone",
     "DESCRIPTION": "Deal !D! damage to the enemy with the lowest health."
   },
+  "NobleWarrior:ThrowingAxe":
+  {
+    "NAME": "Throwing Axe",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Strength this turn. NL Exhaust."
+  },
+  "NobleWarrior:ThrowingBomb":
+  {
+    "NAME": "Throwing Bomb",
+    "DESCRIPTION": "Deal !D! damage twice to ALL enemies. NL Exhaust."
+  },
+  "NobleWarrior:ThrowingHammer":
+  {
+    "NAME": "Throwing Hammer",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Dexterity this turn. NL Exhaust."
+  },
+  "NobleWarrior:ThrowingKnife":
+  {
+    "NAME": "Throwing Knife",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable. NL Exhaust."
+  },
+  "NobleWarrior:ThrowingShuriken":
+  {
+    "NAME": "Throwing Shuriken",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak. NL Exhaust."
+  },
+  "NobleWarrior:ThrowingSpear":
+  {
+    "NAME": "Throwing Spear",
+    "DESCRIPTION": "Deal !D! damage and gain !B! Block. NL Exhaust."
+  },
   "NobleWarrior:UnlimitedArsenal":
   {
     "NAME": "Unlimited Arsenal",
-    "DESCRIPTION": "At the start of your turn, add 1 random Throwing weapon into your hand.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, add 1 random upgraded Throwing weapon into your hand."
+    "DESCRIPTION": "Add X random Throwing weapons into your hand.",
+    "UPGRADE_DESCRIPTION": "Add X random upgraded Throwing weapons into your hand."
   },
   "NobleWarrior:Utsusemi":
   {
@@ -512,7 +563,8 @@
   "NobleWarrior:WalkOnWater":
   {
     "NAME": "Walk on Water",
-    "DESCRIPTION": "Whenever you create a card, gain 1 Strength or Dexterity at random."
+    "DESCRIPTION": "Cards in your hand cost !M! less this turn.",
+    "UPGRADE_DESCRIPTION": "Cards in your hand cost !M! less this turn and next turn."
   },
   "NobleWarrior:WaterBall":
   {

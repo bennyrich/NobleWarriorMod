@@ -5,6 +5,11 @@
       "Choose a card from discard to create a copy in your deck."
     ]
   },
+  "NobleWarrior:InfiltrateAction": {
+    "TEXT": [
+      "copy."
+    ]
+  },
   "NobleWarrior:SiftAction": {
     "TEXT": [
       "Choose up to ",

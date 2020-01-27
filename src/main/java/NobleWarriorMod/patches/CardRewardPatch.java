@@ -59,4 +59,16 @@ default:
 
         return retVal2;
         }
+
 */
+
+/*
+atDamageGive: calculates the damage the one affected by the power deals. (strength, weakness)
+atDamageReceive: calculates the damage the one affected by the power takes. (vulnerable)
+atDamageFinalGive: same as give, but calculated after everything.
+atDamageFinalReceive: same as receive, but calculated after everything.
+
+(in that order, as well)
+
+if memory serves, the other methods are all related to the single event. onUseCard, onAttacked, etc
+ */

@@ -45,6 +45,14 @@
       " times."
     ]
   },
+  "NobleWarrior:Caution": {
+    "NAME": "Caution",
+    "DESCRIPTIONS": [
+      "Whenever you #yExhaust a card, gain #b",
+      " #yStrength or #b",
+      " #yDexterity at random."
+    ]
+  },
   "NobleWarrior:CombatTraining": {
     "NAME": "Combat Training",
     "DESCRIPTIONS": [
@@ -74,6 +82,12 @@
       " times you play an #yAttack each turn, play a random #ySkill from your deck."
     ]
   },
+  "NobleWarrior:Doom": {
+    "NAME": "Doom",
+    "DESCRIPTIONS": [
+      "Death awaits."
+    ]
+  },
   "NobleWarrior:EvasiveJump": {
     "NAME": "Evasive Jump",
     "DESCRIPTIONS": [
@@ -97,7 +111,10 @@
   "NobleWarrior:GilSnapper": {
     "NAME": "Gil Snapper",
     "DESCRIPTIONS": [
-      "When you receive unblocked damage, gain that amount of #yGold."
+      "When you receive unblocked damage, gain ",
+      "twice ",
+      "that amount of #yGold (up to 50). (Currently gained: #b",
+      " #yGold.)"
     ]
   },
   "NobleWarrior:Immobilize": {
@@ -117,6 +134,14 @@
       ".",
       ", #b",
       ", and #b"
+    ]
+  },
+  "NobleWarrior:DualWield": {
+    "NAME": "Dual Wield",
+    "DESCRIPTIONS": [
+      "Whenever you play a 0-cost card, draw #b",
+      " card.",
+      " cards."
     ]
   },
   "NobleWarrior:MountingFury": {
@@ -167,10 +192,16 @@
       " turns."
     ]
   },
+  "NobleWarrior:Stolen": {
+    "NAME": "Stolen",
+    "DESCRIPTIONS": [
+      "This enemy can no longer be stolen from."
+    ]
+  },
   "NobleWarrior:SunkenState": {
     "NAME": "Sunken State",
     "DESCRIPTIONS": [
-      "Whenever you play a 0-cost card, draw a card and gain #b",
+      "Whenever you play a 0-cost card, gain #b",
       " #yBlock."
     ]
   },
@@ -184,11 +215,13 @@
       " random #yupgraded #yThrowing weapons into your hand."
     ]
   },
-  "NobleWarrior:WalkOnWater": {
-    "NAME": "Walk on Water",
+  "NobleWarrior:WaterWalking": {
+    "NAME": "Water Walking",
     "DESCRIPTIONS": [
-      "Whenever you create a card, gain #b",
-      " #yStrength or #yDexterity at random."
+      "Cards in your hand cost #b",
+      " less for the next #b",
+      " turn.",
+      " turns."
     ]
   },
   "NobleWarrior:WaterMovement": {

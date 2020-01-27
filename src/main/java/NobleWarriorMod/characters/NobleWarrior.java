@@ -86,18 +86,18 @@ public class NobleWarrior extends CustomPlayer {
 
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> startingDeck = new ArrayList<>();
-        startingDeck.add("NobleWarrior:SwiftStep");
-        startingDeck.add("NobleWarrior:Hamedo");
-        startingDeck.add("NobleWarrior:ObserveBattle");
+        startingDeck.add("NobleWarrior:Ambidexterity");
+        startingDeck.add("NobleWarrior:Caution");
+        startingDeck.add("NobleWarrior:Infiltrate");
         //startingDeck.add("NobleWarrior:StrikeNW");
         //startingDeck.add("NobleWarrior:StrikeNW");
-        startingDeck.add("NobleWarrior:SpinFist");
-        startingDeck.add("NobleWarrior:SwiftStep");
-        startingDeck.add("NobleWarrior:Hamedo");
+        startingDeck.add("NobleWarrior:Caution");
+        startingDeck.add("NobleWarrior:DesperateDefense");
+        startingDeck.add("NobleWarrior:GilSnapper");
         //startingDeck.add("NobleWarrior:DefendNW");
-        startingDeck.add("NobleWarrior:Brawler");
-        startingDeck.add("NobleWarrior:Brawler");
-        startingDeck.add("NobleWarrior:RepeatingFist");
+        startingDeck.add("NobleWarrior:UnlimitedArsenal");
+        startingDeck.add("NobleWarrior:DesperateDefense");
+        startingDeck.add("NobleWarrior:GilSnapper");
         startingDeck.add("NobleWarrior:BalancedStrike");
 
         return startingDeck;

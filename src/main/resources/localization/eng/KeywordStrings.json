@@ -1,6 +1,6 @@
 [
   {
-    "DESCRIPTION": "An enemy with Blind will miss 50% of attacks. The icon will flash if Blind will activate.",
+    "DESCRIPTION": "An enemy with Blind will deal 50% less damage with attacks. Does not stack with Weak.",
     "NAMES": ["blind", "blinded"],
     "PROPER_NAME": "Blind"
   },
@@ -13,6 +13,11 @@
     "DESCRIPTION": "If an enemy with Confuse would attack, it will attack a random monster instead.",
     "NAMES": ["confuse", "confused"],
     "PROPER_NAME": "Confuse"
+  },
+  {
+    "DESCRIPTION": "Instantly kill a non-boss, non-elite enemy in 3 turns. Deal 50 damage in 3 turns instead to boss or elite.",
+    "NAMES": ["doom", "doomed"],
+    "PROPER_NAME": "Doom"
   },
   {
     "DESCRIPTION": "An enemy with Immobilize cannot gain Block.",
@@ -36,7 +41,7 @@
   },
   {
     "DESCRIPTION": "A throwing weapon is a 0-cost attack. There are six different weapons with various effects.",
-    "NAMES": ["throwing"],
+    "NAMES": ["throw", "throwing spear", "throwing axe", "throwing hammer", "throwing bomb", "throwing knife", "throwing shuriken"],
     "PROPER_NAME": "Throwing"
   },
   {
