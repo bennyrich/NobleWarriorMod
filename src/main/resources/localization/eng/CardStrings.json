@@ -30,6 +30,12 @@
     "DESCRIPTION": "Add 1 Throwing Knife and 1 Throwing Shuriken into your hand.",
     "UPGRADE_DESCRIPTION": "Add 1 upgraded Throwing Knife and 1 upgraded Throwing Shuriken into your hand."
   },
+  "NobleWarrior:AmeNoMurakumo":
+  {
+    "NAME": "Ame-no-Murakumo",
+    "DESCRIPTION": "Gain !B! Block twice. Gain Choking Grasp. Add a Decay and Iai: Ame-no-Murakumo into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block twice. Gain Choking Grasp. Add a Decay and upgraded Iai: Ame-no-Murakumo into your discard pile. NL Exhaust."
+  },
   "NobleWarrior:ArmUp":
   {
     "NAME": "Arm Up",
@@ -40,6 +46,12 @@
   {
     "NAME": "Armor Break",
     "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable."
+  },
+  "NobleWarrior:AsuraKnife":
+  {
+    "NAME": "Asura Knife",
+    "DESCRIPTION": "Deal !D! damage. Draw !M! cards. Add a Daze and Iai: Asura Knife into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Draw !M! cards. Add a Daze and upgraded Iai: Asura Knife into your discard pile. NL Exhaust."
   },
   "NobleWarrior:AttackBoost":
   {
@@ -116,6 +128,12 @@
     "DESCRIPTION": "Cannot be played the same turn you play an Attack. NL Gain !M! Strength.",
     "EXTENDED_DESCRIPTION": [ "I have played an Attack this turn." ]
   },
+  "NobleWarrior:Chirijiraden":
+  {
+    "NAME": "Chirijiraden",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Exhaust !M! cards. Add a Burn and Iai: Chirijiraden into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. Exhaust !M! cards. Add a Burn and upgraded Iai: Chirijiraden into your discard pile. NL Exhaust."
+  },
   "NobleWarrior:CombatTraining":
   {
     "NAME": "Combat Training",
@@ -151,53 +169,53 @@
     "NAME": "Doom Fist",
     "DESCRIPTION": "Deal !D! damage and apply Doom. NL Exhaust."
   },
-  "NobleWarrior:DrawOutAme-no-Murakumo":
+  "NobleWarrior:DrawOutAmeNoMurakumo":
   {
-    "NAME": "Draw Out Ame-no-Murakumo",
-    "DESCRIPTION": "Gain !B! Block. Whenever you play a card this turn, the enemy loses !M! HP. NL Shuffle an Ame-no-Murakumo into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Whenever you play a card this turn, the enemy loses !M! HP. NL Shuffle an upgraded Ame-no-Murakumo into your draw pile. NL Exhaust."
+    "NAME": "Iai: Ame-no-Murakumo",
+    "DESCRIPTION": "Gain !B! Block. Apply 1 Choke. NL Shuffle a Decay and Ame-no-Murakumo into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Apply 1 Choke. NL Shuffle a Decay and upgraded Ame-no-Murakumo into your draw pile. NL Exhaust."
   },
   "NobleWarrior:DrawOutAsuraKnife":
   {
-    "NAME": "Draw Out Asura Knife",
-    "DESCRIPTION": "Deal !D! damage. Draw 1 card. NL Shuffle an Asura Knife into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Draw 1 card. NL Shuffle an upgraded Asura Knife into your draw pile. NL Exhaust."
+    "NAME": "Iai: Asura Knife",
+    "DESCRIPTION": "Deal !D! damage. Draw a card. Shuffle a Daze and Asura Knife into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Draw a card. Shuffle a Daze and upgraded Asura Knife into your draw pile. NL Exhaust."
   },
   "NobleWarrior:DrawOutChirijiraden":
   {
-    "NAME": "Draw Out Chirijiraden",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Shuffle a Burn and a Chirijiraden into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Shuffle a Burn and an upgraded Chirijiraden into your draw pile. NL Exhaust."
+    "NAME": "Iai: Chirijiraden",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Shuffle a Burn and Chirijiraden into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL Shuffle a Burn and upgraded Chirijiraden into your draw pile. NL Exhaust."
   },
   "NobleWarrior:DrawOutKiyomori":
   {
-    "NAME": "Draw Out Kiyomori",
-    "DESCRIPTION": "Gain !B! Block. Gain [E] at the start of your next turn. NL Shuffle a Kiyomori into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain [E] at the start of your next turn. NL Shuffle an upgraded Kiyomori into your draw pile. NL Exhaust."
+    "NAME": "Iai: Kiyomori",
+    "DESCRIPTION": "Gain !B! Block. Gain [E] next turn. NL Shuffle a Void and Kiyomori into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain [E] next turn. NL Shuffle a Void and upgraded Kiyomori into your draw pile. NL Exhaust."
   },
   "NobleWarrior:DrawOutKoutetsu":
   {
-    "NAME": "Draw Out Koutetsu",
-    "DESCRIPTION": "Deal !D! damage. NL Shuffle a Wound and a Koutetsu into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Shuffle a Wound and an upgraded Koutetsu into your draw pile. NL Exhaust."
+    "NAME": "Iai: Koutetsu",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle a Slimed and Koutetsu into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Shuffle a Slimed and upgraded Koutetsu into your draw pile. NL Exhaust."
   },
   "NobleWarrior:DrawOutMasamune":
   {
-    "NAME": "Draw Out Masamune",
-    "DESCRIPTION": "Gain !B! Block. Apply !M! Weak to ALL enemies. NL Shuffle a Masamune into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Apply !M! Weak to ALL enemies. NL Shuffle an upgraded Masamune into your draw pile. NL Exhaust."
+    "NAME": "Iai: Masamune",
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Regen. NL Shuffle a Pain and Masamune into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain !M! Regen. NL Shuffle a Pain and upgraded Masamune into your draw pile. NL Exhaust."
   },
   "NobleWarrior:DrawOutMuramasa":
   {
-    "NAME": "Draw Out Muramasa",
-    "DESCRIPTION": "Deal !D! damage. The enemy loses !M! Strength this turn. NL Shuffle a Muramasa into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. The enemy loses !M! Strength this turn. NL Shuffle an upgraded Muramasa into your draw pile. NL Exhaust."
+    "NAME": "Iai: Muramasa",
+    "DESCRIPTION": "Deal !D! damage. The enemy loses !M! Strength this turn. NL Shuffle a Doubt and Muramasa into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. The enemy loses !M! Strength this turn. NL Shuffle a Doubt and upgraded Muramasa into your draw pile. NL Exhaust."
   },
   "NobleWarrior:DrawOutMurasame":
   {
-    "NAME": "Draw Out Murasame",
-    "DESCRIPTION": "Deal !D! damage. NL Shuffle a Murasame into your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Shuffle an upgraded Murasame into your draw pile. NL Exhaust."
+    "NAME": "Iai: Murasame",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle a Wound and Murasame into your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Shuffle a Wound and upgraded Murasame into your draw pile. NL Exhaust."
   },
   "NobleWarrior:EarthSlash":
   {
@@ -287,6 +305,18 @@
     "NAME": "Kamaitachi",
     "DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength this turn."
   },
+  "NobleWarrior:Kiyomori":
+  {
+    "NAME": "Kiyomori",
+    "DESCRIPTION": "Gain !B! Block. Gain [E] [E] next turn. Add a Void and Iai: Kiyomori into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Gain [E] [E] [E] next turn. Add a Void and upgraded Iai: Kiyomori into your discard pile. NL Exhaust."
+  },
+  "NobleWarrior:Koutetsu":
+  {
+    "NAME": "Koutetsu",
+    "DESCRIPTION": "Gain !B! Block. Add a Slimed and Iai: Koutetsu into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Add a Slimed and upgraded Iai: Koutetsu into your discard pile. NL Exhaust."
+  },
   "NobleWarrior:LawOfTheLand":
   {
     "NAME": "Law of the Land",
@@ -307,6 +337,12 @@
     "NAME": "Dual Wield",
     "DESCRIPTION": "Whenever you play a 0-cost card, draw 1 card."
   },
+  "NobleWarrior:Masamune":
+  {
+    "NAME": "Masamune",
+    "DESCRIPTION": "Deal !D! damage. If Fatal, gain !M! Max HP. Add a Pain and Iai: Masamune into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If Fatal, gain !M! Max HP. Add a Pain and upgraded Iai: Masamune into your discard pile. NL Exhaust."
+  },
   "NobleWarrior:MindBreak":
   {
     "NAME": "Mind Break",
@@ -316,6 +352,18 @@
   {
     "NAME": "Mounting Fury",
     "DESCRIPTION": "At the end of your turn, deal 4 damage to ALL enemies, then increase this damage by !M!."
+  },
+  "NobleWarrior:Muramasa":
+  {
+    "NAME": "Muramasa",
+    "DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength. Add a Doubt and Iai: Muramasa into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength. Add a Doubt and upgraded Iai: Muramasa into your discard pile. NL Exhaust."
+  },
+  "NobleWarrior:Murasame":
+  {
+    "NAME": "Murasame",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Strength. Add a Wound and Iai: Murasame into your discard pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! Strength. Add a Wound and upgraded Iai: Murasame into your discard pile. NL Exhaust."
   },
   "NobleWarrior:Muzan":
   {
@@ -404,7 +452,7 @@
   "NobleWarrior:ScatterTheAshes":
   {
     "NAME": "Scatter the Ashes",
-    "DESCRIPTION": "Whenever a card exhausts, deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Whenever a card Exhausts, deal !M! damage to ALL enemies."
   },
   "NobleWarrior:SeekCover":
   {
@@ -574,7 +622,7 @@
   "NobleWarrior:WaterMovement":
   {
     "NAME": "Water Movement",
-    "DESCRIPTION": "Whenever you create a card, gain [E] and draw 1 card."
+    "DESCRIPTION": "Damage you receive from attacks is reduced by 1."
   },
   "NobleWarrior:WaveFist":
   {

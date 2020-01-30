@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 
 public class InfiltrateAction extends AbstractGameAction {
     public InfiltrateAction(AbstractPlayer p) { this(p, 1); }
@@ -56,8 +58,17 @@ public class InfiltrateAction extends AbstractGameAction {
                     temp.initializeDescription();
                 }
                 //addToBot(new MakeTempCardInHandAction(temp));
-                AbstractDungeon.player.hand.addToHand(c);
-                AbstractDungeon.player.hand.addToHand(temp);
+                if(AbstractDungeon.player.hand.size() < 10) {
+                    // TODO: Apply power from Water Walking?
+                    AbstractDungeon.player.hand.addToHand(c);
+                } else {
+                    AbstractDungeon.player.discardPile.addToTop(c);
+                }
+                if(AbstractDungeon.player.hand.size() < 10) {
+                    AbstractDungeon.effectList.add(new ShowCardAndAddToHandEffect(temp, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+                } else {
+                    AbstractDungeon.effectList.add(new ShowCardAndAddToDiscardEffect(temp, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+                }
             }
             AbstractDungeon.handCardSelectScreen.wereCardsRetrieved = true;
         }

@@ -229,6 +229,21 @@ public class NobleWarriorMod implements PostInitializeSubscriber, EditCardsSubsc
         BaseMod.addCard(new Infiltrate());
         BaseMod.addCard(new Caution());
         BaseMod.addCard(new GilSnapper());
+        BaseMod.addCard(new StealArmor());
+        BaseMod.addCard(new StealWeapon());
+        BaseMod.addCard(new SleightOfHand());
+        BaseMod.addCard(new StealExp());
+        // SAMURAI
+        BaseMod.addCard(new DrawOutAmeNoMurakumo());
+        BaseMod.addCard(new DrawOutAsuraKnife());
+        BaseMod.addCard(new DrawOutChirijiraden());
+        BaseMod.addCard(new DrawOutKiyomori());
+        BaseMod.addCard(new DrawOutKoutetsu());
+        BaseMod.addCard(new DrawOutMuramasa());
+        BaseMod.addCard(new DrawOutMurasame());
+        BaseMod.addCard(new DrawOutMasamune());
+        BaseMod.addCard(new ScatterTheAshes());
+        BaseMod.addCard(new WaterMovement());
 
         logger.info("Done editing cards");
     }

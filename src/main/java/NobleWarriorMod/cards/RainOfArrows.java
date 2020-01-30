@@ -21,7 +21,6 @@ public class RainOfArrows extends AbstractClassCard {
     private static final int COST = 1;
     private static final int ATTACK_DMG = 3;
     private static final int UPGRADE_PLUS_ATTACK_DMG = 1;
-    private int attackCount;
 
     public RainOfArrows() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCardEnum.NOBLEWARRIOR_ORANGE,
@@ -29,18 +28,19 @@ public class RainOfArrows extends AbstractClassCard {
 
         this.baseDamage = this.damage = ATTACK_DMG;
         this.isMultiDamage = true;
-        this.attackCount = 0;
 
         this.tags.add(CardTagsEnum.ARCHER);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for(int i=0; i < attackCount; i++) {
-            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new DamageAllEnemiesAction((AbstractCreature) p, this.multiDamage,
-                    this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        for(AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
+            if(c.type == CardType.ATTACK) {
+                addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            }
         }
+        //addToBot(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
-
+/*
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         super.onPlayCard(c, m);
 
@@ -52,7 +52,7 @@ public class RainOfArrows extends AbstractClassCard {
 
         this.attackCount = 0;
     }
-
+*/
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();

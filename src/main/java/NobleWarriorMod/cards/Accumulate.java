@@ -36,7 +36,7 @@ public class Accumulate extends AbstractClassCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ExhaustAction(BASE_EXHAUST, false, false, false));
+        addToBot(new ExhaustAction(BASE_EXHAUST, false, false, false));
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p,
                 (AbstractPower)new StrengthPower((AbstractCreature)p, this.magicNumber), this.magicNumber));
     }

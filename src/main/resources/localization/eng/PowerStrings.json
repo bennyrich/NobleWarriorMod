@@ -53,6 +53,13 @@
       " #yDexterity at random."
     ]
   },
+  "NobleWarrior:ChokingGrasp": {
+    "NAME": "Choking Grasp",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, each enemy loses #b",
+      " HP."
+    ]
+  },
   "NobleWarrior:CombatTraining": {
     "NAME": "Combat Training",
     "DESCRIPTIONS": [
@@ -227,8 +234,8 @@
   "NobleWarrior:WaterMovement": {
     "NAME": "Water Movement",
     "DESCRIPTIONS": [
-      "Whenever you create a card, gain ",
-      " and draw a card."
+      "Damage you receive from attacks is reduced by #b",
+      "."
     ]
   },
   "NobleWarrior:WeaponGuard": {

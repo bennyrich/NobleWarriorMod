@@ -3,6 +3,7 @@ package NobleWarriorMod.cards;
 import NobleWarriorMod.NobleWarriorMod;
 import NobleWarriorMod.enums.AbstractCardEnum;
 import NobleWarriorMod.enums.CardTagsEnum;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -24,7 +25,6 @@ public class CallUponTheEarth extends AbstractClassCard {
     private static final int ATTACK_DMG = 5;
     private static final int UPGRADE_PLUS_ATTACK_DMG = 2;
     private static final int NUM_CARDS = 3;
-    private int count = 0;
 
     public CallUponTheEarth() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.NOBLEWARRIOR_ORANGE,
@@ -37,22 +37,16 @@ public class CallUponTheEarth extends AbstractClassCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        if(count > 2) {
+        if(AbstractDungeon.actionManager.cardsPlayedThisTurn.size() > magicNumber) {
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-            this.stopGlowing();
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR;
         }
     }
 
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        super.triggerOnOtherCardPlayed(c);
-        count++;
-        if(count > 2) {
-            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+    public void triggerOnGlowCheck() {
+        if(AbstractDungeon.actionManager.cardsPlayedThisTurn.size() >= magicNumber) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR;
         }
-    }
-
-    public void atTurnStart() {
-        count = 0;
     }
 
     public void upgrade() {

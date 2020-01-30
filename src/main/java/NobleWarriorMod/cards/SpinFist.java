@@ -37,6 +37,7 @@ public class SpinFist extends AbstractClassCard {
         } else {
             addToBot(new RandomCardFromDiscardPileToHandAction());
         }
+        isWaterWalked = false;
     }
 
     public void upgrade() {

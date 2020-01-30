@@ -32,7 +32,7 @@ public class Polka extends AbstractClassCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(AbstractMonster mon : AbstractDungeon.getMonsters().monsters) {
-            addToBot(new ApplyPowerAction(mon, p, new StrengthPower(p, -magicNumber), -magicNumber));
+            addToBot(new ApplyPowerAction(mon, p, new StrengthPower(mon, -magicNumber), -magicNumber));
         }
     }
 

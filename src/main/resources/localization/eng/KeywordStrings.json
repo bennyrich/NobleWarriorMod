@@ -10,6 +10,16 @@
     "PROPER_NAME": "Charm"
   },
   {
+    "DESCRIPTION": "An enemy with Choke loses 3 HP whenever you play a card.",
+    "NAMES": ["choke", "choked"],
+    "PROPER_NAME": "Choke"
+  },
+  {
+    "DESCRIPTION": "While you have Choking Grasp, all enemies lose 3 HP whenever you play a card.",
+    "NAMES": ["choking grasp"],
+    "PROPER_NAME": "Choking Grasp"
+  },
+  {
     "DESCRIPTION": "If an enemy with Confuse would attack, it will attack a random monster instead.",
     "NAMES": ["confuse", "confused"],
     "PROPER_NAME": "Confuse"

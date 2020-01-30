@@ -23,7 +23,6 @@ public class Ambidexterity extends AbstractClassCard {
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
-    private ArrayList<AbstractCard> previews;
 
     public Ambidexterity() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -57,55 +56,6 @@ public class Ambidexterity extends AbstractClassCard {
             cardsToPreview = previews.get(0);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
-        }
-    }
-
-    @Override
-    public void renderCardTip(SpriteBatch sb) {
-        super.renderCardTip(sb);
-        boolean renderTip = (boolean) ReflectionHacks.getPrivate(this, AbstractCard.class, "renderTip");
-
-        int count = 0;
-        if (!Settings.hideCards && renderTip) {
-            if (AbstractDungeon.player != null && AbstractDungeon.player.isDraggingCard) {
-                return;
-            }
-        }
-    }
-
-    @Override
-    public void renderCardPreview(SpriteBatch sb) {
-        if (AbstractDungeon.player == null || !AbstractDungeon.player.isDraggingCard) {
-            int index = 0;
-            for (AbstractCard c : previews) {
-                float dx = (AbstractCard.IMG_WIDTH * 0.9f - 5f) * drawScale;
-                float dy = (AbstractCard.IMG_HEIGHT * 0.4f - 5f) * drawScale;
-                if (current_x > Settings.WIDTH * 0.75f) {
-                    c.current_x = current_x + dx;
-                } else {
-                    c.current_x = current_x - dx;
-                }
-                if (index == 0) {
-                    c.current_y = current_y + dy;
-                } else {
-                    c.current_y = current_y - dy;
-                }
-                c.drawScale = drawScale * 0.8f;
-                c.render(sb);
-                index++;
-            }
-        }
-    }
-
-    @Override
-    public void renderCardPreviewInSingleView(SpriteBatch sb) {
-        int index = 0;
-        for (AbstractCard c : previews) {
-            c.current_x = 485.0F * Settings.scale;
-            c.current_y = (795.0F - 510.0F * index) * Settings.scale;
-            c.drawScale = 0.8f;
-            c.render(sb);
-            index++;
         }
     }
 }
