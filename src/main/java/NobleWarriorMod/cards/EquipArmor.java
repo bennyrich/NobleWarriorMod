@@ -39,7 +39,7 @@ public class EquipArmor extends AbstractClassCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)p,
                 (AbstractCreature)p, this.block));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new EquipArmorAction(p, BLOCK_THRESHOLD, METALLICIZE));
+        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new EquipArmorAction(p, BLOCK_THRESHOLD, magicNumber));
 }
 
     public void upgrade() {

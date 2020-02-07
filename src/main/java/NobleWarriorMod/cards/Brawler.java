@@ -16,10 +16,12 @@ public class Brawler extends AbstractClassCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = cardStrings.NAME;
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    private static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
     private static final int BLOCK_AMOUNT = 8;
     private static final int UPGRADE_PLUS_BLOCK_AMOUNT = 3;
-    private static final int CARDS_TO_DRAW = 2;
+    private static final int CARDS_TO_DRAW = 1;
+    private static final int UPGRADE_PLUS_CARDS_TO_DRAW = 1;
 
     public Brawler() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -46,6 +48,9 @@ public class Brawler extends AbstractClassCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(UPGRADE_PLUS_BLOCK_AMOUNT);
+            upgradeMagicNumber(UPGRADE_PLUS_CARDS_TO_DRAW);
+            rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

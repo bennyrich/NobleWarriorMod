@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.GainPennyEffect;
 
 public class StealGil extends AbstractClassCard {
     private static final String ID = "NobleWarrior:StealGil";
@@ -38,12 +39,15 @@ public class StealGil extends AbstractClassCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         if(!m.hasPower(StolenPower.POWER_ID)) {
             addToBot(new GainGoldAction(magicNumber));
             addToBot(new ApplyPowerAction(m, p, new StolenPower(m), 0));
             CardCrawlGame.sound.play("GOLD_JINGLE");
+            for(int i=0; i<magicNumber; i++) {
+                AbstractDungeon.effectList.add(new GainPennyEffect(m.hb.cX, m.hb.cY));
+            }
         }
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
 
     public void upgrade() {

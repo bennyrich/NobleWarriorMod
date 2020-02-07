@@ -21,7 +21,7 @@ public class ReverseFlourish extends AbstractClassCard {
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int ATTACK_DMG = 8;
-    private static final int UPGRADE_PLUS_ATTACK_DMG = 3;
+    //private static final int UPGRADE_PLUS_ATTACK_DMG = 3;
     private static final int INCREASE_PER_ATTACK = 2;
     private static final int UPGRADE_PLUS_INCREASE_PER_ATTACK = 2;
     private int actualStartingDamage;
@@ -52,7 +52,7 @@ public class ReverseFlourish extends AbstractClassCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeDamage(UPGRADE_PLUS_ATTACK_DMG);
+            //this.upgradeDamage(UPGRADE_PLUS_ATTACK_DMG);
             this.upgradeMagicNumber(UPGRADE_PLUS_INCREASE_PER_ATTACK);
         }
     }

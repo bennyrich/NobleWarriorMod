@@ -36,6 +36,7 @@ public class Counter extends AbstractClassCard {
         if(tmp > 0) {
             addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, tmp * magicNumber), tmp * magicNumber));
         }
+        addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, magicNumber), magicNumber));
     }
 
     public void upgrade() {

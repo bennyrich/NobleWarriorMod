@@ -32,8 +32,9 @@ public class ThrowStoneAction extends AbstractGameAction {
                 targetMonster = monster;
             }
         });
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)targetMonster,
-                new DamageInfo((AbstractCreature)player, this.damage, this.damageType), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        if(targetMonster != null) {
+            addToBot(new DamageAction(targetMonster, new DamageInfo(player, this.damage, this.damageType), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        }
         this.isDone = true;
     }
 }

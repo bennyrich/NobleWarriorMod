@@ -17,7 +17,7 @@ public class Fury extends AbstractClassCard {
     private static final String NAME = cardStrings.NAME;
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
-    private static final int BLOCK_AMT = 4;
+    private static final int BLOCK_AMT = 3;
     private static final int UPGRADE_PLUS_BLOCK_AMT = 2;
 
     public Fury() {

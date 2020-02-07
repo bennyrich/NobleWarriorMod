@@ -33,8 +33,7 @@ public class Sift extends AbstractClassCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p,
-                (AbstractPower)new SiftPower((AbstractCreature)p, 1, CARDS_TO_DISCARD, CARDS_TO_UPGRADE), 1));
+        addToBot(new ApplyPowerAction(p, p, new SiftPower(p, 1, CARDS_TO_DISCARD, CARDS_TO_UPGRADE), 1));
     }
 
     public void upgrade() {

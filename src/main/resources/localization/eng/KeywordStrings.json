@@ -25,7 +25,7 @@
     "PROPER_NAME": "Confuse"
   },
   {
-    "DESCRIPTION": "Instantly kill a non-boss, non-elite enemy in 3 turns. Deal 50 damage in 3 turns instead to boss or elite.",
+    "DESCRIPTION": "After 3 turns, kill a non-boss, non-elite enemy. Deals 50 damage after 3 turns instead to boss or elite.",
     "NAMES": ["doom", "doomed"],
     "PROPER_NAME": "Doom"
   },

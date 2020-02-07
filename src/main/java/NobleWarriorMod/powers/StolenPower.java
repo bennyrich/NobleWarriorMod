@@ -2,6 +2,7 @@ package NobleWarriorMod.powers;
 
 import NobleWarriorMod.NobleWarriorMod;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -21,6 +22,10 @@ public class StolenPower extends AbstractPower {
         this.amount = -1;
         updateDescription();
         this.img = new Texture(NobleWarriorMod.getPowerImagePath(POWER_ID));
+    }
+
+    public void onRemove() {
+        addToBot(new ApplyPowerAction(owner, owner, new StolenPower(owner), 0));
     }
 
     public void updateDescription() {

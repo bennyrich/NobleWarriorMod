@@ -89,7 +89,8 @@
   "NobleWarrior:Brawler":
   {
     "NAME": "Brawler",
-    "DESCRIPTION": "Gain !B! Block. Draw !M! cards if there are no Skills in your hand."
+    "DESCRIPTION": "Gain !B! Block. Draw !M! card if there are no Skills in your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Draw !M! cards if there are no Skills in your hand."
   },
   "NobleWarrior:CalculatedStrike":
   {
@@ -142,7 +143,7 @@
   "NobleWarrior:Counter":
   {
     "NAME": "Counter",
-    "DESCRIPTION": "Gain !M! Thorns for each enemy that intends to attack."
+    "DESCRIPTION": "Gain !M! Thorns, plus !M! Thorns for each enemy that intends to attack."
   },
   "NobleWarrior:CounterFlood":
   {
@@ -272,7 +273,7 @@
   "NobleWarrior:Hamedo":
   {
     "NAME": "Hamedo",
-    "DESCRIPTION": "Deal !D! damage to each enemy planning to attack. Gain 1 Buffer."
+    "DESCRIPTION": "Deal !D! damage to each enemy planning to attack. Gain 1 Buffer. NL Exhaust."
   },
   "NobleWarrior:HighJump":
   {
@@ -457,7 +458,7 @@
   "NobleWarrior:SeekCover":
   {
     "NAME": "Seek Cover",
-    "DESCRIPTION": "Gain !B! Block. Gain !M! Dexterity, then if you have 3 or more Dexterity, Exhaust."
+    "DESCRIPTION": "Gain !B! Block. Gain 1 Dexterity, then if you have !M! or more Dexterity, Exhaust."
   },
   "NobleWarrior:ShieldBreak":
   {
@@ -622,7 +623,7 @@
   "NobleWarrior:WaterMovement":
   {
     "NAME": "Water Movement",
-    "DESCRIPTION": "Damage you receive from attacks is reduced by 1."
+    "DESCRIPTION": "Damage you receive from attacks is reduced by !M!."
   },
   "NobleWarrior:WaveFist":
   {

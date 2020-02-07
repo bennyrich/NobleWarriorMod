@@ -5,11 +5,12 @@
     "Benny and Friends"
   ],
   "description": "Adds the Noble Warrior as a new playable character. Based on the warrior-type classes from Final Fantasy Tactics.",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "sts_version": "07-17-2019",
   "mts_version": "3.6.2",
   "dependencies": [
-    "basemod"
+    "basemod",
+    "stslib"
   ],
   "update_json": "https://api.github.com/repos/bennyrich/StSFFTCharMod/releases/latest"
 }

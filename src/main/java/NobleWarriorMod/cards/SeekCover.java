@@ -26,13 +26,15 @@ public class SeekCover extends AbstractClassCard {
     private static final int BLOCK_AMOUNT = 4;
     private static final int UPGRADE_PLUS_BLOCK_AMOUNT = 2;
     private static final int DEXTERITY = 1;
+    private static final int DEX_LIMIT = 3;
+    private static final int UPGRADE_PLUS_DEX_LIMIT = 1;
 
     public SeekCover() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
                 AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, CardTagsEnum.ARCHER);
 
         this.block = this.baseBlock = BLOCK_AMOUNT;
-        this.baseMagicNumber = this.magicNumber = DEXTERITY;
+        this.baseMagicNumber = this.magicNumber = DEX_LIMIT;
 
         this.tags.add(CardTagsEnum.ARCHER);
     }
@@ -40,20 +42,19 @@ public class SeekCover extends AbstractClassCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.exhaust = false;
         for(AbstractPower pow : p.powers) {
-            if( pow instanceof DexterityPower && pow.amount > 1 ) {
+            if( pow instanceof DexterityPower && pow.amount >= (magicNumber - 1) ) {
                 this.exhaust = true;
             }
         }
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)p,
-                (AbstractCreature)p, this.block));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p,
-                (AbstractPower)new DexterityPower((AbstractCreature)p, this.magicNumber), this.magicNumber));
+        addToBot(new GainBlockAction(p, p, this.block));
+        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, DEXTERITY), DEXTERITY));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(UPGRADE_PLUS_BLOCK_AMOUNT);
+            upgradeMagicNumber(UPGRADE_PLUS_DEX_LIMIT);
         }
     }
 }

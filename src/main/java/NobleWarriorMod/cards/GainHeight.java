@@ -33,7 +33,7 @@ public class GainHeight extends AbstractClassCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         int temp = energyOnUse;
-        if(p.hasRelic("Chemical X")) { temp += 2; }
+        if(p.hasRelic("Chemical X")) { temp += 2; p.getRelic("Chemical X").flash(); }
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainHeightAction(p, this.magicNumber, this.freeToPlayOnce, temp));
     }
 

@@ -12,6 +12,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import java.util.ArrayList;
+
 public class BombToss extends AbstractClassCard {
     private static final String ID = "NobleWarrior:BombToss";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -21,6 +23,7 @@ public class BombToss extends AbstractClassCard {
     private static final int DAMAGE = 3;
     private static final int UPGRADE_PLUS_DAMAGE = 1;
     private static final int BOMBS = 2;
+    private static final AbstractCard PREV1 = new ThrowingBomb();
 
     public BombToss() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
@@ -29,7 +32,8 @@ public class BombToss extends AbstractClassCard {
         damage = baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = BOMBS;
         isMultiDamage = true;
-        cardsToPreview = new ThrowingBomb();
+        previews.add(PREV1);
+        cardsToPreview = previews.get(0);
         this.tags.add(CardTagsEnum.NINJA);
     }
 
@@ -46,9 +50,9 @@ public class BombToss extends AbstractClassCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DAMAGE);
-            AbstractCard prev = new ThrowingBomb();
-            prev.upgrade();
-            cardsToPreview = prev;
+            PREV1.upgrade();
+            previews = new ArrayList<>();
+            previews.add(PREV1);
         }
     }
 }

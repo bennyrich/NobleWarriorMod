@@ -19,8 +19,8 @@ public class Sandstorm extends AbstractClassCard {
     private static final String NAME = cardStrings.NAME;
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int DAMAGE = 4;
-    private static final int UPGRADE_PLUS_DAMAGE = 2;
+    private static final int DAMAGE = 3;
+//    private static final int UPGRADE_PLUS_DAMAGE = 2;
     private static final int BLIND = 1;
     private static final int UPGRADE_PLUS_BLIND = 1;
 
@@ -42,7 +42,7 @@ public class Sandstorm extends AbstractClassCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DAMAGE);
+ //           upgradeDamage(UPGRADE_PLUS_DAMAGE);
             upgradeMagicNumber(UPGRADE_PLUS_BLIND);
         }
     }

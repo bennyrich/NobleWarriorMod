@@ -33,11 +33,6 @@ public class GainHeightAction extends AbstractGameAction {
             effect = this.energyOnUse;
         }
 
-        if (this.p.hasRelic("Chemical X")) {
-            effect += 2;
-            this.p.getRelic("Chemical X").flash();
-        }
-
         if (effect > 0) {
             for (int i = 0; i < effect; i++) {
                 AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p,

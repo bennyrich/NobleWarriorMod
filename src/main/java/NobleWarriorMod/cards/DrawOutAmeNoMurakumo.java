@@ -28,6 +28,7 @@ public class DrawOutAmeNoMurakumo extends AbstractClassCard {
     private static final int CHOKE_AMT = 3;
     private static final AbstractCard PREV2 = new AmeNoMurakumo();
     private static AbstractCard PREV2U = new AmeNoMurakumo();
+    private static final AbstractCard PREV1 = new Decay();
 
     public DrawOutAmeNoMurakumo() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -35,7 +36,7 @@ public class DrawOutAmeNoMurakumo extends AbstractClassCard {
 
         block = baseBlock = BLOCK;
         magicNumber = baseMagicNumber = CHOKE_AMT;
-        previews.add(new Decay());
+        previews.add(PREV1);
         previews.add(PREV2);
         cardsToPreview = previews.get(0);
         exhaust = true;
@@ -55,10 +56,9 @@ public class DrawOutAmeNoMurakumo extends AbstractClassCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(UPGRADE_PLUS_BLOCK);
-            AbstractCard p1 = new Decay();
             PREV2U.upgrade();
             previews = new ArrayList<>();
-            previews.add(p1);
+            previews.add(PREV1);
             previews.add(PREV2U);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
