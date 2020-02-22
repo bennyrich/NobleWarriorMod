@@ -28,6 +28,7 @@ public class StealExp extends AbstractClassCard {
                 AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.RARE, CardTarget.ENEMY, CardTagsEnum.THIEF);
 
         damage = baseDamage = DAMAGE;
+        exhaust = true;
         this.tags.add(CardTagsEnum.THIEF);
     }
 
