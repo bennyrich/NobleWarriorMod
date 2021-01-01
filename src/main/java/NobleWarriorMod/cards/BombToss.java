@@ -50,9 +50,11 @@ public class BombToss extends AbstractClassCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DAMAGE);
-            PREV1.upgrade();
+            AbstractCard p1 = new ThrowingBomb();
+            p1.upgrade();
             previews = new ArrayList<>();
-            previews.add(PREV1);
+            previews.add(p1);
+            cardsToPreview = previews.get(0);
         }
     }
 }

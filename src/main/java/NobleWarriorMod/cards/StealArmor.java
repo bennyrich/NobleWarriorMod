@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.MinionPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 public class StealArmor extends AbstractClassCard {
@@ -36,7 +37,7 @@ public class StealArmor extends AbstractClassCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if(!m.hasPower(StolenPower.POWER_ID)) {
+        if(!m.hasPower(StolenPower.POWER_ID) && !m.hasPower("Minion")) {
             addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, magicNumber), magicNumber));
             addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, magicNumber, false), magicNumber));
             addToBot(new ApplyPowerAction(m, p, new StolenPower(m), 0));

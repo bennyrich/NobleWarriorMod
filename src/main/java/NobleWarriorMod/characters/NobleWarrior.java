@@ -42,6 +42,62 @@ public class NobleWarrior extends CustomPlayer {
         e.setTime(e.getEndTime() * MathUtils.random());
     }
 
+    /*
+    if (trophy1Hb.hovered) {
+
+      TipHelper.renderGenericTip(trophy1Hb.cX + offsetX, trophy1Hb.cY + offsetY, trophyStrings[0], GetTrophyMessage(1));
+    }
+
+
+    FontHelper.tipHeaderFont.getData().setScale(0.6F);
+
+
+        if (!trophyHb.hovered) {
+
+      sb.setColor(Color.LIGHT_GRAY);
+    }
+    else {
+
+      sb.setColor(Color.WHITE);
+    }
+    sb.draw(slot3, trophyHb.x, trophyHb.y, halfW, halfH, w, h, Settings.scale, Settings.scale, 0.0F, 0, 0, 64, 64, false, false);
+
+
+    if (trophyLevel <= 0) {
+
+      texture = locked;
+    }
+    else {
+
+      texture = platinum;
+    }
+
+    sb.setColor(Color.WHITE);
+    sb.draw(texture, trophyHb.x, trophyHb.y, halfW, halfH, w, h, Settings.scale, Settings.scale, 0.0F, 0, 0, 64, 64, false, false);
+
+    if (trophyLevel > 0)
+    {
+      FontHelper.renderFontCentered(sb, FontHelper.tipHeaderFont, trophyString, trophyHb.cX + trophyHb.width * 1.3F * Settings.scale, trophyHb.cY, Settings.GOLD_COLOR);
+    }
+
+
+    Prefs file:
+    {
+  "TOTAL_FLOORS": "868",
+  "WIN_STREAK": "1",
+  "LOSE_COUNT": "177",
+  "ENEMY_KILL": "810",
+  "BOSS_KILL": "27",
+  "PLAYTIME": "31302",
+  "HIGHEST_FLOOR": "56",
+  "BEST_WIN_STREAK": "1",
+  "WIN_COUNT": "4",
+  "ASCENSION_LEVEL": "5",
+  "LAST_ASCENSION_LEVEL": "5",
+  "FAST_VICTORY": "5217"
+}
+     */
+
     public String getTitle(AbstractPlayer.PlayerClass playerClass) { return "The Noble Warrior"; }
 
     public AbstractCard.CardColor getCardColor() { return AbstractCardEnum.NOBLEWARRIOR_ORANGE; }
@@ -89,17 +145,16 @@ public class NobleWarrior extends CustomPlayer {
         startingDeck.add("NobleWarrior:StrikeNW");
         startingDeck.add("NobleWarrior:StrikeNW");
         startingDeck.add("NobleWarrior:StrikeNW");
-        //startingDeck.add("NobleWarrior:StrikeNW");
-        //startingDeck.add("NobleWarrior:StrikeNW");
         startingDeck.add("NobleWarrior:StrikeNW");
         startingDeck.add("NobleWarrior:StrikeNW");
         startingDeck.add("NobleWarrior:DefendNW");
-        //startingDeck.add("NobleWarrior:DefendNW");
         startingDeck.add("NobleWarrior:DefendNW");
         startingDeck.add("NobleWarrior:DefendNW");
         startingDeck.add("NobleWarrior:DefendNW");
         startingDeck.add("NobleWarrior:BalancedStrike");
-
+        //startingDeck.add("NobleWarrior:WalkOnWater"); // EXTRA CARD REMOVE WHEN DONE TESTING
+        //startingDeck.add("NobleWarrior:HighJump"); // EXTRA CARD REMOVE WHEN DONE TESTING
+        //startingDeck.add("NobleWarrior:SuperJump"); // EXTRA CARD REMOVE WHEN DONE TESTING
         return startingDeck;
     }
 

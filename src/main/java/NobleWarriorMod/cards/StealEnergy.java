@@ -34,7 +34,7 @@ public class StealEnergy extends AbstractClassCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, this.block));
-        if(!m.hasPower(StolenPower.POWER_ID)) {
+        if(!m.hasPower(StolenPower.POWER_ID) && !m.hasPower("Minion")) {
             addToBot(new GainEnergyAction(magicNumber));
             addToBot(new ApplyPowerAction(m, p, new StolenPower(m), 0));
         }

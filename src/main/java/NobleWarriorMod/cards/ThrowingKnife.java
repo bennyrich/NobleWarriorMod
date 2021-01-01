@@ -19,7 +19,7 @@ public class ThrowingKnife extends AbstractClassCard {
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 0;
     private static final int DAMAGE = 3;
-    private static final int UPGRADE_PLUS_DAMAGE = 1;
+    private static final int UPGRADE_PLUS_VULN = 1;
     private static final int VULN = 1;
 
     public ThrowingKnife() {
@@ -32,7 +32,7 @@ public class ThrowingKnife extends AbstractClassCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, magicNumber, false), magicNumber));
     }
 
@@ -43,7 +43,7 @@ public class ThrowingKnife extends AbstractClassCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DAMAGE);
+            upgradeMagicNumber(UPGRADE_PLUS_VULN);
         }
     }
 }

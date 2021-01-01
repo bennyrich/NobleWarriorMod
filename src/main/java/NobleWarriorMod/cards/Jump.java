@@ -21,7 +21,7 @@ public class Jump extends AbstractClassCard {
     private static final int UPGRADE_PLUS_ATTACK_DMG = 4;
 
     public Jump() {
-        super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
+        super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.SKILL, // was: ATTACK
                 AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.COMMON, CardTarget.ENEMY, CardTagsEnum.LANCER);
 
         this.baseDamage = this.damage = ATTACK_DMG;
@@ -29,11 +29,13 @@ public class Jump extends AbstractClassCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractClassCard tempC = new JumpLanded();
+        if (this.upgraded) { tempC.upgrade(); }
         if(p.hasPower(JumpPower.POWER_ID)) {
             JumpPower jumpPower = (JumpPower)p.getPower(JumpPower.POWER_ID);
-            jumpPower.stackNewTarget(ATTACK_DMG, m);
+            jumpPower.stackPower(tempC, m);
         } else {
-            addToBot(new ApplyPowerAction(p, p, new JumpPower(p, ATTACK_DMG, false, m), 0));
+            addToBot(new ApplyPowerAction(p, p, new JumpPower(p, m, tempC), 0));
         }
     }
 

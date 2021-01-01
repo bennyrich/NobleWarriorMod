@@ -13,6 +13,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import java.util.ArrayList;
+
 public class JavelinThrow extends AbstractClassCard {
     private static final String ID = "NobleWarrior:JavelinThrow";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -21,13 +23,15 @@ public class JavelinThrow extends AbstractClassCard {
     private static final int COST = 1;
     private static final int DAMAGE = 3;
     private static final int UPGRADE_PLUS_DAMAGE = 1;
+    private static final AbstractCard PREV1 = new ThrowingSpear();
 
     public JavelinThrow() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.COMMON, CardTarget.ENEMY, CardTagsEnum.NINJA);
 
         damage = baseDamage = DAMAGE;
-        cardsToPreview = new ThrowingSpear();
+        previews.add(PREV1);
+        cardsToPreview = previews.get(0);
         this.tags.add(CardTagsEnum.NINJA);
     }
 
@@ -42,9 +46,11 @@ public class JavelinThrow extends AbstractClassCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DAMAGE);
-            AbstractCard prev = new ThrowingSpear();
-            prev.upgrade();
-            cardsToPreview = prev;
+            AbstractCard p1 = new ThrowingSpear();
+            p1.upgrade();
+            previews = new ArrayList<>();
+            previews.add(p1);
+            cardsToPreview = previews.get(0);
         }
     }
 }

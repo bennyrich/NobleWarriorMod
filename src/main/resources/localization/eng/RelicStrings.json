@@ -3,7 +3,7 @@
     "NAME": "Broad Sword",
     "FLAVOR": "A weapon possessed by an adept of the Squire class.",
     "DESCRIPTIONS": [
-      "The first #bSquire card played each combat is played twice. Double the chance of finding #bSquire cards from card rewards."
+      "Gain [E] after the first #bSquire card played each combat. Double the chance of finding #bSquire cards from card rewards."
     ]
   }
 }

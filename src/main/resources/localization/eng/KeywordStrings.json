@@ -45,7 +45,7 @@
     "PROPER_NAME": "Slow"
   },
   {
-    "DESCRIPTION": "Each enemy may only be Stolen from 1 time.",
+    "DESCRIPTION": "Each enemy may only be Stolen from 1 time. You cannot steal from minions.",
     "NAMES": ["steal", "stolen"],
     "PROPER_NAME": "Steal"
   },

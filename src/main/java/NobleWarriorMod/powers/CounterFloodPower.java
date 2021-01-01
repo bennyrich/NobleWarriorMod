@@ -42,7 +42,8 @@ public class CounterFloodPower extends AbstractPower {
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if(info.owner != null && info.owner instanceof AbstractMonster) {
+        if(info.owner != null && info.owner instanceof AbstractMonster && info.type != DamageInfo.DamageType.THORNS) {
+            NobleWarriorMod.logger.info("owner: " + owner.toString());
             for(int i = 0; i < amount; i++) {
                 int rand = AbstractDungeon.miscRng.random(1, 6);
                 switch (rand) {

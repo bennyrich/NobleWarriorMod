@@ -36,7 +36,7 @@ public class StealWeapon extends AbstractClassCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if(!m.hasPower(StolenPower.POWER_ID)) {
+        if(!m.hasPower(StolenPower.POWER_ID) && !m.hasPower("Minion")) {
             addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber), magicNumber));
             addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -magicNumber), -magicNumber));
             addToBot(new ApplyPowerAction(m, p, new StolenPower(m), 0));

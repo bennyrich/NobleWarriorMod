@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -54,19 +55,30 @@ public class WaterWalkingPower extends AbstractPower {
         if(playerOwner == null) { return; }
         for(AbstractCard c : playerOwner.hand.group) {
             c.modifyCostForCombat(-cost);
-            modifiedCards.add(c);
+            if(!AbstractDungeon.player.hasPower("Confusion")) {
+                WaterWalkingPower.modifiedCards.add(c);
+                //NobleWarriorMod.logger.info("Adding to modifiedCards list:" + c.name + ", ID:" + c.cardID);
+            }
         }
+        //NobleWarriorMod.logger.info("Current modified cards array size at end of onInitialApplication: " + WaterWalkingPower.modifiedCards.size());
     }
 
     public void onCardDraw(AbstractCard c) {
-        if(!modifiedCards.contains(c)) {
+        //NobleWarriorMod.logger.info("Entered onCardDraw for WaterWalkingPower");
+        //NobleWarriorMod.logger.info("Current modified cards array size at start of onCardDraw: " + WaterWalkingPower.modifiedCards.size());
+        if(!WaterWalkingPower.modifiedCards.contains(c) && AbstractDungeon.player.hasPower("Confusion")) {
+            //NobleWarriorMod.logger.info("About to Water Walk cost for card " + c.name + ", ID:" + c.cardID + ", current cost " + c.costForTurn);
             c.modifyCostForCombat(-cost);
-            modifiedCards.add(c);
+            if(!AbstractDungeon.player.hasPower("Confusion")) { WaterWalkingPower.modifiedCards.add(c); }
+            //NobleWarriorMod.logger.info("Post Water Walk cost for card " + c.name + ", ID:" + c.cardID + ": " + c.costForTurn);
+        } else {
+            //NobleWarriorMod.logger.info("Index of card " + c.name + " in modified cards is " + WaterWalkingPower.modifiedCards.indexOf(c));
         }
+        //NobleWarriorMod.logger.info("Current modified cards array size at end of onCardDraw: " + WaterWalkingPower.modifiedCards.size());
     }
 
     public void onVictory() {
-        modifiedCards = new ArrayList<>();
+        WaterWalkingPower.modifiedCards = new ArrayList<>();
     }
 
     public void atEndOfTurn(boolean isPlayer) {
@@ -76,14 +88,14 @@ public class WaterWalkingPower extends AbstractPower {
             // this NEVER gets called EVER??
             NobleWarriorMod.logger.info("Removing WW Power");
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
-            for(AbstractCard c : modifiedCards) {
+            for(AbstractCard c : WaterWalkingPower.modifiedCards) {
                 NobleWarriorMod.logger.info("Found modified card: " + c.name);
                 if(c.isCostModified) {
                     NobleWarriorMod.logger.info("Un-modifying cost: " + c.name);
                     c.modifyCostForCombat(cost);
                 }
             }
-            modifiedCards = new ArrayList<>();
+            WaterWalkingPower.modifiedCards = new ArrayList<>();
             NobleWarriorMod.logger.info("Size of modifiedCards after removing power: " + modifiedCards.size());
         } else {
             NobleWarriorMod.logger.info("Entered ReducePower branch. current amount is: " + amount);
@@ -95,7 +107,7 @@ public class WaterWalkingPower extends AbstractPower {
                         c.modifyCostForCombat(cost); // set cost for combat back to c.cost??
                     }
                 }
-                modifiedCards = new ArrayList<>();
+                WaterWalkingPower.modifiedCards = new ArrayList<>();
             }
             addToBot(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
             NobleWarriorMod.logger.info("Leaving ReducePower branch. current amount is: " + amount);

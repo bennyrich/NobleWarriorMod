@@ -135,12 +135,10 @@
   "NobleWarrior:Jump": {
     "NAME": "Jump",
     "DESCRIPTIONS": [
-      "At the beginning of your next turn, you will deal #b",
+      "At the beginning of your next turn, you will play an Attack for #b",
       " damage to ",
       " damage to ALL enemies. ",
-      ".",
-      ", #b",
-      ", and #b"
+      "."
     ]
   },
   "NobleWarrior:DualWield": {
@@ -154,7 +152,7 @@
   "NobleWarrior:MountingFury": {
     "NAME": "Mounting Fury",
     "DESCRIPTIONS": [
-      "At the start of your turn, deal #b",
+      "At the end of your turn, deal #b",
       " damage to ALL enemies, then increase this value by #b",
       "."
     ]

@@ -5,6 +5,7 @@ import NobleWarriorMod.NobleWarriorMod;
 import NobleWarriorMod.enums.CardTagsEnum;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -27,7 +28,7 @@ public class BroadSword extends CustomRelic {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if(this.active && card.hasTag(CardTagsEnum.SQUIRE)) {
             flash();
-
+/*
             AbstractMonster m = null;
 
             if (action.target != null) {
@@ -46,7 +47,8 @@ public class BroadSword extends CustomRelic {
             tmp.applyPowers();
             tmp.purgeOnUse = true;
             AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m, card.energyOnUse, true));
-
+*/
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
             this.active = false;
         }
     }

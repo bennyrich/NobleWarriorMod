@@ -26,7 +26,8 @@ public class SuperJump extends AbstractClassCard {
 
     public SuperJump() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST,
-                DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.RARE, CardTarget.ALL_ENEMY, CardTagsEnum.LANCER);
+                DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCardEnum.NOBLEWARRIOR_ORANGE, CardRarity.RARE, CardTarget.ALL_ENEMY, CardTagsEnum.LANCER);
+        // was: ATTACK
 
         this.baseDamage = this.damage = ATTACK_DMG;
         this.isMultiDamage = true;
@@ -34,8 +35,15 @@ public class SuperJump extends AbstractClassCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p,
-                (AbstractPower)new JumpPower((AbstractCreature)p, ATTACK_DMG, true, null), ATTACK_DMG));
+        AbstractClassCard tempC = new SuperJumpLanded();
+        if (this.upgraded) { tempC.upgrade(); }
+        if(p.hasPower(JumpPower.POWER_ID)) {
+            JumpPower jumpPower = (JumpPower)p.getPower(JumpPower.POWER_ID);
+            jumpPower.stackPower(tempC, null);
+        } else {
+            AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) p,
+                    (AbstractPower) new JumpPower((AbstractCreature) p, null, tempC), ATTACK_DMG));
+        }
     }
 
     public void upgrade() {

@@ -18,7 +18,7 @@ public class Fury extends AbstractClassCard {
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
     private static final int BLOCK_AMT = 3;
-    private static final int UPGRADE_PLUS_BLOCK_AMT = 2;
+    private static final int UPGRADE_PLUS_BLOCK_AMT = 1;
 
     public Fury() {
         super(ID, NAME, NobleWarriorMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.POWER,

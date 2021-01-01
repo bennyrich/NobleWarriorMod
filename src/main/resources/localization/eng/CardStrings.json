@@ -278,7 +278,12 @@
   "NobleWarrior:HighJump":
   {
     "NAME": "High Jump",
-    "DESCRIPTION": "Deal !D! damage next turn."
+    "DESCRIPTION": "Attack for !D! damage next turn."
+  },
+  "NobleWarrior:HighJumpLanded":
+  {
+    "NAME": "High Jump",
+    "DESCRIPTION": "Deal !D! damage."
   },
   "NobleWarrior:Infiltrate":
   {
@@ -299,7 +304,12 @@
   "NobleWarrior:Jump":
   {
     "NAME": "Jump",
-    "DESCRIPTION": "Deal !D! damage next turn."
+    "DESCRIPTION": "Attack for !D! damage next turn."
+  },
+  "NobleWarrior:JumpLanded":
+  {
+    "NAME": "Jump",
+    "DESCRIPTION": "Deal !D! damage."
   },
   "NobleWarrior:Kamaitachi":
   {
@@ -536,7 +546,12 @@
   "NobleWarrior:SuperJump":
   {
     "NAME": "Super Jump",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies next turn."
+    "DESCRIPTION": "Attack for !D! damage to ALL enemies next turn."
+  },
+  "NobleWarrior:SuperJumpLanded":
+  {
+    "NAME": "Super Jump",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
   "NobleWarrior:SwiftShot":
   {

@@ -30,6 +30,7 @@ public class DoomPower extends AbstractPower {
         this.owner = owner;
         monsterOwner = (owner instanceof AbstractMonster) ? (AbstractMonster)owner : null;
         this.amount = -1;
+        this.type = PowerType.DEBUFF;
         this.counter = counter;
         updateDescription();
         this.img = new Texture(NobleWarriorMod.getPowerImagePath(POWER_ID));

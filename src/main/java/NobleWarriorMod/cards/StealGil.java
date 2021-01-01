@@ -39,7 +39,7 @@ public class StealGil extends AbstractClassCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(!m.hasPower(StolenPower.POWER_ID)) {
+        if(!m.hasPower(StolenPower.POWER_ID) && !m.hasPower("Minion")) {
             addToBot(new GainGoldAction(magicNumber));
             addToBot(new ApplyPowerAction(m, p, new StolenPower(m), 0));
             CardCrawlGame.sound.play("GOLD_JINGLE");

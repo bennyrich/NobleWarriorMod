@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BufferPower;
+import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
 public class Hamedo extends AbstractClassCard {
     private static final String ID = "NobleWarrior:Hamedo";
@@ -35,6 +36,9 @@ public class Hamedo extends AbstractClassCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
             if(!mo.isDead && NobleWarriorMod.Utils.isAttacking(mo)) {
+                //AbstractDungeon.effectList.add(new FlashAtkImgEffect(mo.hb.cX, mo.hb.cY, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                //mo.damage(new DamageInfo(p, damage, damageTypeForTurn));
+                this.calculateCardDamage(mo);
                 addToBot(new DamageAction(mo, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
             }
         }

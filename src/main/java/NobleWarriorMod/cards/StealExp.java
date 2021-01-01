@@ -34,7 +34,7 @@ public class StealExp extends AbstractClassCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        if(!m.hasPower(StolenPower.POWER_ID)) {
+        if(!m.hasPower(StolenPower.POWER_ID) && !m.hasPower("Minion")) {
             addToBot(new DiscoverIntoMasterDeckAction());
             addToBot(new ApplyPowerAction(m, p, new StolenPower(m), 0));
         }

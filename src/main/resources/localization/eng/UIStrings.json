@@ -22,5 +22,27 @@
       "Choose ",
       " cards to shuffle to your deck."
     ]
+  },
+  "NobleWarrior:CharacterSelectScreen": {
+    "TEXT": [
+      "Requisite unlocks:",
+      "Complete Ascension level ",
+      " on ",
+      "Current Ascension level: "
+    ]
+  },
+  "NobleWarrior:Classes": {
+    "TEXT": [
+      "Squire",
+      "Knight",
+      "Archer",
+      "Monk",
+      "Thief",
+      "Geomancer",
+      "Lancer",
+      "Dancer",
+      "Samurai",
+      "Ninja"
+    ]
   }
 }

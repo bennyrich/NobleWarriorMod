@@ -151,7 +151,7 @@ public abstract class AbstractClassCard extends CustomCard {
             }
             else {
 
-                font = FontHelper.cardTitleFont_small;
+                font = FontHelper.cardTitleFont; // WAS FontHelper.cardTitleFont_small, now scale down cardTitleFont
                 xPos = this.current_x;
                 yPos = this.current_y;
                 offsetY = 400.0F * Settings.scale * this.drawScale / 2.0F;
